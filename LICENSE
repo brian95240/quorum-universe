@@ -1,0 +1,151 @@
+# QUORUM UNIVERSE - DUAL LICENSE AGREEMENT
+
+Copyright (c) 2026 Quorum Universe Contributors
+All Rights Reserved.
+
+This software is dual-licensed under the terms described below. You may choose
+to use this software under either license, depending on your use case.
+
+---
+
+## OPTION 1: GNU GENERAL PUBLIC LICENSE v3.0 (GPL-3.0)
+
+For open-source, non-commercial, educational, and personal use.
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <https://www.gnu.org/licenses/>.
+
+### GPL-3.0 Summary:
+- ✓ Free for personal, educational, and non-commercial use
+- ✓ Free for open-source projects that also use GPL-3.0
+- ✓ Must disclose source code of derivative works
+- ✓ Must include this license and copyright notice
+- ✓ Must state changes made to the original code
+- ✗ Cannot be used in proprietary/closed-source commercial products
+
+---
+
+## OPTION 2: COMMERCIAL LICENSE
+
+For proprietary, commercial, and enterprise use where GPL-3.0 terms are not
+suitable or desired.
+
+### Commercial License Pricing Tiers (Software/Firmware Only)
+
+| Tier | License Type | Annual Revenue | Price | Features |
+|------|--------------|----------------|-------|----------|
+| **Starter** | Single Developer | < $100K | $499/year | 1 developer, 1 project, community support |
+| **Professional** | Small Team | $100K - $1M | $1,999/year | Up to 5 developers, 3 projects, email support |
+| **Business** | Organization | $1M - $10M | $7,999/year | Up to 25 developers, unlimited projects, priority support |
+| **Enterprise** | Large Organization | $10M - $100M | $24,999/year | Unlimited developers, unlimited projects, dedicated support, SLA |
+| **Enterprise Plus** | Fortune 500 | > $100M | Custom | Custom terms, on-premise deployment, 24/7 support, custom SLA |
+
+### One-Time Perpetual License Options
+
+| Tier | License Type | Price | Features |
+|------|--------------|-------|----------|
+| **Perpetual Starter** | Single Developer | $1,499 | Lifetime license, 1 developer, 1 year updates |
+| **Perpetual Professional** | Small Team | $5,999 | Lifetime license, up to 5 developers, 2 years updates |
+| **Perpetual Business** | Organization | $19,999 | Lifetime license, up to 25 developers, 3 years updates |
+| **Perpetual Enterprise** | Large Organization | $49,999 | Lifetime license, unlimited developers, 5 years updates |
+
+### OEM/Embedded/Firmware Licensing
+
+For embedding Quorum Universe in hardware products, IoT devices, or firmware:
+
+| Tier | Volume | Per-Unit Royalty | Minimum Annual |
+|------|--------|------------------|----------------|
+| **Embedded Starter** | 1 - 1,000 units | $2.50/unit | $2,500 |
+| **Embedded Standard** | 1,001 - 10,000 units | $1.50/unit | $10,000 |
+| **Embedded Volume** | 10,001 - 100,000 units | $0.75/unit | $50,000 |
+| **Embedded Enterprise** | 100,001+ units | $0.25/unit | Custom |
+
+### What Commercial License Includes:
+
+1. **Proprietary Use Rights**
+   - Use in closed-source commercial products
+   - No requirement to disclose source code
+   - No copyleft obligations
+
+2. **Distribution Rights**
+   - Distribute as part of proprietary software
+   - Sublicense to end users
+   - White-label and rebrand options (Enterprise+)
+
+3. **Support & Updates**
+   - Priority bug fixes
+   - Security updates
+   - New feature access during license term
+
+4. **Legal Protection**
+   - Indemnification (Enterprise tiers)
+   - IP warranty
+   - Compliance certification
+
+### Commercial License Terms:
+
+1. **Grant of License**: Subject to payment of applicable fees, Licensor grants
+   Licensee a non-exclusive, non-transferable license to use, modify, and
+   distribute the Software in accordance with the purchased tier.
+
+2. **Restrictions**: Licensee may not:
+   - Sublicense beyond the scope of the purchased tier
+   - Use the Software to create a competing product
+   - Remove or alter any proprietary notices
+
+3. **Warranty Disclaimer**: THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY
+   OF ANY KIND, EXPRESS OR IMPLIED.
+
+4. **Limitation of Liability**: IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY
+   INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES.
+
+5. **Termination**: License terminates automatically upon breach of terms or
+   non-payment of fees.
+
+---
+
+## CONTACT FOR COMMERCIAL LICENSING
+
+To obtain a commercial license or discuss custom terms:
+
+- **Email**: licensing@quorum-universe.io
+- **Web**: https://quorum-universe.io/licensing
+- **Enterprise Sales**: enterprise@quorum-universe.io
+
+---
+
+## THIRD-PARTY COMPONENTS
+
+This software includes components under the following licenses:
+- NetworkX: BSD 3-Clause License
+- NumPy: BSD 3-Clause License
+- FastAPI: MIT License
+- Redis: BSD 3-Clause License
+- PostgreSQL: PostgreSQL License
+
+See THIRD_PARTY_LICENSES.md for complete attribution.
+
+---
+
+## CONTRIBUTOR LICENSE AGREEMENT
+
+By contributing to this project, you agree that:
+1. Your contributions are your original work
+2. You grant the project maintainers the right to use your contributions
+   under both the GPL-3.0 and Commercial licenses
+3. You have the authority to make this grant
+
+---
+
+Version: 1.0.0
+Effective Date: January 7, 2026
+Last Updated: January 7, 2026

@@ -1,0 +1,16 @@
+# Quorum - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core LLM integration
+ollama>=0.1.6
+
+# Database (PostgreSQL + Apache AGE)
+psycopg2-binary>=2.9.9
+
+# Optional: For better pattern matching (install AGE + pg_trgm extension in Postgres)
+# These are PostgreSQL extensions, not Python packages:
+# - postgresql-contrib (for pg_trgm similarity)
+# - apache-age (from: https://github.com/apache/age)
+
+# Utilities
+python-dotenv>=1.0.0  # For .env configuration

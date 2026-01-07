@@ -1,0 +1,716 @@
+{
+  "synergy_clusters": [
+    {
+      "id": "cross_cluster_life_sciences_integration",
+      "name": "Systems Biology Hub",
+      "nodes": [
+        "archetype:broad_genomics",
+        "archetype:systems_biology",
+        "archetype:longevity_research",
+        "archetype:harvard_med"
+      ],
+      "synergy_score": 1.0,
+      "burst_potential": 0.5099301270189223,
+      "properties": {
+        "synergy_type": "life_sciences_integration",
+        "domain_count": 16,
+        "corpus_total_gb": 232
+      }
+    },
+    {
+      "id": "cross_cluster_applied_technology",
+      "name": "Robotics-Engineering Fusion",
+      "nodes": [
+        "archetype:robotics_embodied_ai",
+        "archetype:mit_engineering",
+        "archetype:stanford_cs"
+      ],
+      "synergy_score": 0.8,
+      "burst_potential": 0.3642856180831642,
+      "properties": {
+        "synergy_type": "applied_technology",
+        "domain_count": 10,
+        "corpus_total_gb": 203
+      }
+    },
+    {
+      "id": "cross_cluster_cross_cultural_synthesis",
+      "name": "Eastern-Western Wisdom Bridge",
+      "nodes": [
+        "archetype:beijing_classical",
+        "archetype:nalanda_vedic",
+        "archetype:baghdad_golden",
+        "archetype:oxford_classics"
+      ],
+      "synergy_score": 0.722,
+      "burst_potential": 0.3530426406871193,
+      "properties": {
+        "synergy_type": "cross_cultural_synthesis",
+        "domain_count": 15,
+        "corpus_total_gb": 61
+      }
+    },
+    {
+      "id": "cross_cluster_theoretical_foundation",
+      "name": "Quantum-Physics Nexus",
+      "nodes": [
+        "archetype:caltech_physics",
+        "archetype:quantum_computing",
+        "archetype:princeton_math"
+      ],
+      "synergy_score": 0.716,
+      "burst_potential": 0.34099966329107445,
+      "properties": {
+        "synergy_type": "theoretical_foundation",
+        "domain_count": 12,
+        "corpus_total_gb": 118
+      }
+    },
+    {
+      "id": "cross_cluster_technical_convergence",
+      "name": "AI-Neuroscience Bridge",
+      "nodes": [
+        "archetype:stanford_cs",
+        "archetype:neuroscience_cognitive",
+        "archetype:ai_safety"
+      ],
+      "synergy_score": 0.582,
+      "burst_potential": 0.2826878405775519,
+      "properties": {
+        "synergy_type": "technical_convergence",
+        "domain_count": 11,
+        "corpus_total_gb": 71
+      }
+    },
+    {
+      "id": "cross_cluster_ethical_reasoning",
+      "name": "Philosophy-AI Ethics Tribunal",
+      "nodes": [
+        "archetype:philosophy_tribunal",
+        "archetype:ai_safety",
+        "archetype:oxford_classics"
+      ],
+      "synergy_score": 0.566,
+      "burst_potential": 0.28151555466702205,
+      "properties": {
+        "synergy_type": "ethical_reasoning",
+        "domain_count": 11,
+        "corpus_total_gb": 63
+      }
+    },
+    {
+      "id": "archetype_cluster_stem_core",
+      "name": "Stem Core Cluster",
+      "nodes": [
+        "archetype:mit_engineering",
+        "archetype:caltech_physics",
+        "archetype:princeton_math",
+        "archetype:complexity_science",
+        "archetype:quantum_computing",
+        "archetype:climate_earth_systems"
+      ],
+      "synergy_score": 0.5,
+      "burst_potential": 0.7637094933625126,
+      "properties": {
+        "cluster_type": "stem_core",
+        "archetype_count": 6,
+        "domain_overlap": 0.0
+      }
+    },
+    {
+      "id": "archetype_cluster_applied_tech",
+      "name": "Applied Tech Cluster",
+      "nodes": [
+        "archetype:stanford_cs",
+        "archetype:hacker_insurgent",
+        "archetype:ai_safety",
+        "archetype:robotics_embodied_ai"
+      ],
+      "synergy_score": 0.5,
+      "burst_potential": 0.3540050913924872,
+      "properties": {
+        "cluster_type": "applied_tech",
+        "archetype_count": 4,
+        "domain_overlap": 0.0
+      }
+    },
+    {
+      "id": "archetype_cluster_life_systems",
+      "name": "Life Systems Cluster",
+      "nodes": [
+        "archetype:harvard_med",
+        "archetype:broad_genomics",
+        "archetype:longevity_research",
+        "archetype:neuroscience_cognitive",
+        "archetype:systems_biology"
+      ],
+      "synergy_score": 0.5,
+      "burst_potential": 0.6262647615158763,
+      "properties": {
+        "cluster_type": "life_systems",
+        "archetype_count": 5,
+        "domain_overlap": 0.0
+      }
+    },
+    {
+      "id": "archetype_cluster_human_systems",
+      "name": "Human Systems Cluster",
+      "nodes": [
+        "archetype:yale_law",
+        "archetype:oxford_classics",
+        "archetype:chicago_economics"
+      ],
+      "synergy_score": 0.5,
+      "burst_potential": 0.33216496580927724,
+      "properties": {
+        "cluster_type": "human_systems",
+        "archetype_count": 3,
+        "domain_overlap": 0.0
+      }
+    },
+    {
+      "id": "archetype_cluster_meta_cognitive",
+      "name": "Meta Cognitive Cluster",
+      "nodes": [
+        "archetype:mensa_orthogonal",
+        "archetype:philosophy_tribunal"
+      ],
+      "synergy_score": 0.5,
+      "burst_potential": 0.1712,
+      "properties": {
+        "cluster_type": "meta_cognitive",
+        "archetype_count": 2,
+        "domain_overlap": 0.0
+      }
+    },
+    {
+      "id": "archetype_cluster_non_western",
+      "name": "Non Western Cluster",
+      "nodes": [
+        "archetype:beijing_classical",
+        "archetype:baghdad_golden",
+        "archetype:nalanda_vedic"
+      ],
+      "synergy_score": 0.5,
+      "burst_potential": 0.2449096093353127,
+      "properties": {
+        "cluster_type": "non_western",
+        "archetype_count": 3,
+        "domain_overlap": 0.0
+      }
+    },
+    {
+      "id": "archetype_cluster_creative_synthesis",
+      "name": "Creative Synthesis Cluster",
+      "nodes": [
+        "archetype:berkeley_psychedelics",
+        "archetype:bauhaus_design",
+        "archetype:indigenous_ecology"
+      ],
+      "synergy_score": 0.5,
+      "burst_potential": 0.22176496580927726,
+      "properties": {
+        "cluster_type": "creative_synthesis",
+        "archetype_count": 3,
+        "domain_overlap": 0.0
+      }
+    },
+    {
+      "id": "cross_cluster_systems_thinking",
+      "name": "Complexity-Climate Network",
+      "nodes": [
+        "archetype:complexity_science",
+        "archetype:climate_earth_systems",
+        "archetype:indigenous_ecology"
+      ],
+      "synergy_score": 0.498,
+      "burst_potential": 0.23991404520791035,
+      "properties": {
+        "synergy_type": "systems_thinking",
+        "domain_count": 9,
+        "corpus_total_gb": 69
+      }
+    },
+    {
+      "id": "cross_cluster_creative_innovation",
+      "name": "Creative-Design Synthesis",
+      "nodes": [
+        "archetype:bauhaus_design",
+        "archetype:hacker_insurgent",
+        "archetype:mensa_orthogonal"
+      ],
+      "synergy_score": 0.46399999999999997,
+      "burst_potential": 0.23902809041582065,
+      "properties": {
+        "synergy_type": "creative_innovation",
+        "domain_count": 11,
+        "corpus_total_gb": 12
+      }
+    }
+  ],
+  "burst_clusters": [
+    {
+      "id": "burst_module_api_server",
+      "name": "Api Server Burst Point",
+      "nodes": [
+        "module:api_server",
+        "module:config",
+        "module:symbiotic_connector",
+        "module:graph_engine"
+      ],
+      "burst_score": 0.6,
+      "activation_threshold": 0.5,
+      "cascade_potential": 0.2,
+      "properties": {
+        "type": "code_module",
+        "dependents": 3,
+        "cascade_depth": 1
+      }
+    },
+    {
+      "id": "burst_module_closed_loop_test",
+      "name": "Closed Loop Test Burst Point",
+      "nodes": [
+        "module:closed_loop_test",
+        "module:config",
+        "module:graph_engine",
+        "module:symbiotic_connector"
+      ],
+      "burst_score": 0.6,
+      "activation_threshold": 0.5,
+      "cascade_potential": 0.2,
+      "properties": {
+        "type": "code_module",
+        "dependents": 3,
+        "cascade_depth": 1
+      }
+    },
+    {
+      "id": "burst_cluster_stem_core",
+      "name": "Stem Core Burst Cluster",
+      "nodes": [
+        "archetype:mit_engineering",
+        "archetype:caltech_physics",
+        "archetype:princeton_math",
+        "archetype:complexity_science",
+        "archetype:quantum_computing",
+        "archetype:climate_earth_systems"
+      ],
+      "burst_score": 0.23076923076923078,
+      "activation_threshold": 0.6,
+      "cascade_potential": 0.686,
+      "properties": {
+        "type": "archetype_cluster",
+        "archetype_count": 6
+      }
+    },
+    {
+      "id": "burst_cluster_life_systems",
+      "name": "Life Systems Burst Cluster",
+      "nodes": [
+        "archetype:harvard_med",
+        "archetype:broad_genomics",
+        "archetype:longevity_research",
+        "archetype:neuroscience_cognitive",
+        "archetype:systems_biology"
+      ],
+      "burst_score": 0.19230769230769232,
+      "activation_threshold": 0.6,
+      "cascade_potential": 0.554,
+      "properties": {
+        "type": "archetype_cluster",
+        "archetype_count": 5
+      }
+    },
+    {
+      "id": "burst_cluster_applied_tech",
+      "name": "Applied Tech Burst Cluster",
+      "nodes": [
+        "archetype:stanford_cs",
+        "archetype:hacker_insurgent",
+        "archetype:ai_safety",
+        "archetype:robotics_embodied_ai"
+      ],
+      "burst_score": 0.15384615384615385,
+      "activation_threshold": 0.6,
+      "cascade_potential": 0.108,
+      "properties": {
+        "type": "archetype_cluster",
+        "archetype_count": 4
+      }
+    },
+    {
+      "id": "burst_cluster_human_systems",
+      "name": "Human Systems Burst Cluster",
+      "nodes": [
+        "archetype:yale_law",
+        "archetype:oxford_classics",
+        "archetype:chicago_economics"
+      ],
+      "burst_score": 0.11538461538461539,
+      "activation_threshold": 0.6,
+      "cascade_potential": 0.21,
+      "properties": {
+        "type": "archetype_cluster",
+        "archetype_count": 3
+      }
+    },
+    {
+      "id": "burst_cluster_non_western",
+      "name": "Non Western Burst Cluster",
+      "nodes": [
+        "archetype:beijing_classical",
+        "archetype:baghdad_golden",
+        "archetype:nalanda_vedic"
+      ],
+      "burst_score": 0.11538461538461539,
+      "activation_threshold": 0.6,
+      "cascade_potential": 0.052,
+      "properties": {
+        "type": "archetype_cluster",
+        "archetype_count": 3
+      }
+    },
+    {
+      "id": "burst_cluster_creative_synthesis",
+      "name": "Creative Synthesis Burst Cluster",
+      "nodes": [
+        "archetype:berkeley_psychedelics",
+        "archetype:bauhaus_design",
+        "archetype:indigenous_ecology"
+      ],
+      "burst_score": 0.11538461538461539,
+      "activation_threshold": 0.6,
+      "cascade_potential": 0.034,
+      "properties": {
+        "type": "archetype_cluster",
+        "archetype_count": 3
+      }
+    }
+  ],
+  "hidden_connections": [
+    {
+      "type": "temperature_affinity",
+      "temperature": 0.7,
+      "archetypes": [
+        "mit_engineering",
+        "stanford_cs",
+        "baghdad_golden",
+        "nalanda_vedic",
+        "broad_genomics",
+        "chicago_economics",
+        "longevity_research",
+        "quantum_computing",
+        "neuroscience_cognitive",
+        "systems_biology",
+        "climate_earth_systems",
+        "robotics_embodied_ai"
+      ],
+      "strength": 0.9615384615384616,
+      "description": "Archetypes with similar reasoning temperature (0.7)"
+    },
+    {
+      "type": "temperature_affinity",
+      "temperature": 0.8,
+      "archetypes": [
+        "oxford_classics",
+        "beijing_classical",
+        "berkeley_psychedelics",
+        "bauhaus_design",
+        "hacker_insurgent",
+        "indigenous_ecology",
+        "complexity_science",
+        "philosophy_tribunal"
+      ],
+      "strength": 0.8076923076923077,
+      "description": "Archetypes with similar reasoning temperature (0.8)"
+    },
+    {
+      "type": "temperature_affinity",
+      "temperature": 0.6,
+      "archetypes": [
+        "caltech_physics",
+        "princeton_math",
+        "harvard_med",
+        "yale_law",
+        "ai_safety"
+      ],
+      "strength": 0.6923076923076923,
+      "description": "Archetypes with similar reasoning temperature (0.6)"
+    },
+    {
+      "type": "domain_overlap",
+      "source": "climate_earth_systems",
+      "target": "indigenous_ecology",
+      "overlapping_domains": [
+        "ecology",
+        "sustainability"
+      ],
+      "strength": 0.5,
+      "clusters": [
+        "stem_core",
+        "creative_synthesis"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "mit_engineering",
+      "target": "robotics_embodied_ai",
+      "overlapping_domains": [
+        "robotics"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "stem_core",
+        "applied_tech"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "baghdad_golden",
+      "target": "princeton_math",
+      "overlapping_domains": [
+        "mathematics"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "non_western",
+        "stem_core"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "baghdad_golden",
+      "target": "harvard_med",
+      "overlapping_domains": [
+        "medicine"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "non_western",
+        "life_systems"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "nalanda_vedic",
+      "target": "neuroscience_cognitive",
+      "overlapping_domains": [
+        "consciousness"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "non_western",
+        "life_systems"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "nalanda_vedic",
+      "target": "philosophy_tribunal",
+      "overlapping_domains": [
+        "logic"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "non_western",
+        "meta_cognitive"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "berkeley_psychedelics",
+      "target": "nalanda_vedic",
+      "overlapping_domains": [
+        "consciousness"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "creative_synthesis",
+        "non_western"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "berkeley_psychedelics",
+      "target": "neuroscience_cognitive",
+      "overlapping_domains": [
+        "consciousness"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "creative_synthesis",
+        "life_systems"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "bauhaus_design",
+      "target": "mit_engineering",
+      "overlapping_domains": [
+        "design"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "creative_synthesis",
+        "stem_core"
+      ]
+    },
+    {
+      "type": "domain_overlap",
+      "source": "ai_safety",
+      "target": "philosophy_tribunal",
+      "overlapping_domains": [
+        "ethics"
+      ],
+      "strength": 0.25,
+      "clusters": [
+        "applied_tech",
+        "meta_cognitive"
+      ]
+    }
+  ],
+  "cross_domain_bridges": [
+    {
+      "archetype": "mit_engineering",
+      "categories_spanned": [
+        "technical",
+        "creative"
+      ],
+      "bridge_strength": 0.3333333333333333,
+      "domains": [
+        "engineering",
+        "robotics",
+        "systems",
+        "design"
+      ],
+      "cluster": "stem_core"
+    },
+    {
+      "archetype": "baghdad_golden",
+      "categories_spanned": [
+        "life_sciences",
+        "scientific"
+      ],
+      "bridge_strength": 0.3333333333333333,
+      "domains": [
+        "islamic_science",
+        "mathematics",
+        "optics",
+        "medicine"
+      ],
+      "cluster": "non_western"
+    }
+  ],
+  "optimization_opportunities": [
+    {
+      "id": "opt_async_parallel",
+      "category": "performance",
+      "description": "Maximize async parallelism in archetype routing",
+      "impact_score": 0.9,
+      "effort_score": 0.5,
+      "roi_score": 1.8,
+      "affected_components": [
+        "api_server",
+        "graph_engine"
+      ],
+      "recommendations": [
+        "Use asyncio.gather() for parallel archetype queries",
+        "Implement connection pooling for database access",
+        "Add batch processing for bulk operations"
+      ]
+    },
+    {
+      "id": "opt_graph_compression",
+      "category": "storage",
+      "description": "Compress graph data using Zstandard for 70% size reduction",
+      "impact_score": 0.7,
+      "effort_score": 0.4,
+      "roi_score": 1.7499999999999998,
+      "affected_components": [
+        "graph_engine",
+        "symbiotic_connector"
+      ],
+      "recommendations": [
+        "Apply Zstandard compression to graph serialization",
+        "Use dictionary-based compression for repeated patterns",
+        "Implement lazy loading for large graph segments"
+      ]
+    },
+    {
+      "id": "opt_embeddings",
+      "category": "intelligence",
+      "description": "Optimize embedding storage and retrieval with pgvector",
+      "impact_score": 0.85,
+      "effort_score": 0.55,
+      "roi_score": 1.5454545454545452,
+      "affected_components": [
+        "graph_engine"
+      ],
+      "recommendations": [
+        "Use HNSW index for fast similarity search",
+        "Implement embedding quantization for storage efficiency",
+        "Cache frequently accessed embeddings in Redis"
+      ]
+    },
+    {
+      "id": "opt_cache_hierarchy",
+      "category": "performance",
+      "description": "Implement multi-tier cache hierarchy (L1/L2/L3) for archetype responses",
+      "impact_score": 0.85,
+      "effort_score": 0.6,
+      "roi_score": 1.4166666666666667,
+      "affected_components": [
+        "api_server",
+        "graph_engine",
+        "symbiotic_connector"
+      ],
+      "recommendations": [
+        "Implement Redis L1 cache with 5-minute TTL for hot queries",
+        "Add L2 warm cache with 1-hour TTL for frequent patterns",
+        "Use L3 cold cache with 24-hour TTL for archetype embeddings"
+      ]
+    },
+    {
+      "id": "opt_synergy_cascade",
+      "category": "intelligence",
+      "description": "Leverage synergy clusters for cascading knowledge activation",
+      "impact_score": 0.95,
+      "effort_score": 0.7,
+      "roi_score": 1.3571428571428572,
+      "affected_components": [
+        "graph_engine",
+        "api_server"
+      ],
+      "recommendations": [
+        "Pre-compute synergy clusters on startup",
+        "Implement cascade activation for related archetypes",
+        "Use burst detection for optimal query routing"
+      ]
+    },
+    {
+      "id": "opt_cross_platform_sync",
+      "category": "connectivity",
+      "description": "Optimize cross-platform sync for PC/Mac/Raspberry Pi/mobile",
+      "impact_score": 0.8,
+      "effort_score": 0.65,
+      "roi_score": 1.2307692307692308,
+      "affected_components": [
+        "symbiotic_connector",
+        "api_server"
+      ],
+      "recommendations": [
+        "Implement differential sync for large datasets",
+        "Use WebSocket for real-time updates",
+        "Add platform-specific optimizations"
+      ]
+    }
+  ],
+  "metrics": {
+    "total_synergy_score": 0.5,
+    "network_efficiency": 0.06307692307692307,
+    "cascade_potential": 0.5
+  },
+  "analysis_timestamp": "2026-01-07T22:39:41.759791",
+  "analysis_duration_ms": 9.252786636352539
+}

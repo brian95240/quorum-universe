@@ -1,0 +1,724 @@
+{
+  "timestamp": "2026-01-07T17:58:46.530633",
+  "duration_seconds": 0.03476238250732422,
+  "annealing": {
+    "iterations": 757,
+    "improvements": 7,
+    "best_energy": 0.9908440710857283,
+    "duration_seconds": 0.03420233726501465,
+    "final_weights": {
+      "api_server->config": 0.7688513467343773,
+      "api_server->graph_engine": 0.7750298270071405,
+      "api_server->redis_cache_manager": 0.8035976952426211,
+      "api_server->synergy_analyzer": 0.47386050498525817,
+      "api_server->symbiotic_connector": 0.6221223582725033,
+      "graph_engine->config": 0.7842997153326279,
+      "graph_engine->hex_ring_optimizer": 0.43677394825868615,
+      "synergy_analyzer->config": 0.03738837550267383,
+      "synergy_analyzer->graph_engine": 0.6673844658448396,
+      "synergy_analyzer->hex_ring_optimizer": 0.0,
+      "redis_cache_manager->config": 0.585985549727311,
+      "redis_cache_manager->symbiotic_connector": 0.43342550233572624,
+      "symbiotic_connector->config": 0.7027128671874507,
+      "symbiotic_connector->redis_cache_manager": 0.23315352346916773,
+      "hex_ring_optimizer->config": 0.8369654584918529,
+      "api_server->hex_ring_optimizer": 0.5097961500205206,
+      "synergy_analyzer->redis_cache_manager": 0.5773695513110776
+    }
+  },
+  "intersections": [
+    {
+      "id": "api_server->config",
+      "type": "tribunal_chain",
+      "source_module": "api_server",
+      "target_module": "config",
+      "weight": 0.7688513467343773,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "api_server->graph_engine",
+      "type": "data_flow",
+      "source_module": "api_server",
+      "target_module": "graph_engine",
+      "weight": 0.7750298270071405,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "api_server->redis_cache_manager",
+      "type": "cache_access",
+      "source_module": "api_server",
+      "target_module": "redis_cache_manager",
+      "weight": 0.8035976952426211,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "api_server->synergy_analyzer",
+      "type": "function_call",
+      "source_module": "api_server",
+      "target_module": "synergy_analyzer",
+      "weight": 0.47386050498525817,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "api_server->symbiotic_connector",
+      "type": "api_endpoint",
+      "source_module": "api_server",
+      "target_module": "symbiotic_connector",
+      "weight": 0.6221223582725033,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "graph_engine->config",
+      "type": "module_boundary",
+      "source_module": "graph_engine",
+      "target_module": "config",
+      "weight": 0.7842997153326279,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "graph_engine->hex_ring_optimizer",
+      "type": "data_flow",
+      "source_module": "graph_engine",
+      "target_module": "hex_ring_optimizer",
+      "weight": 0.43677394825868615,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "synergy_analyzer->config",
+      "type": "tribunal_chain",
+      "source_module": "synergy_analyzer",
+      "target_module": "config",
+      "weight": 0.03738837550267383,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "synergy_analyzer->graph_engine",
+      "type": "graph_query",
+      "source_module": "synergy_analyzer",
+      "target_module": "graph_engine",
+      "weight": 0.6673844658448396,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "synergy_analyzer->hex_ring_optimizer",
+      "type": "data_flow",
+      "source_module": "synergy_analyzer",
+      "target_module": "hex_ring_optimizer",
+      "weight": 0.0,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "redis_cache_manager->config",
+      "type": "module_boundary",
+      "source_module": "redis_cache_manager",
+      "target_module": "config",
+      "weight": 0.585985549727311,
+      "synergy_potential": 0.8929927748636555,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "redis_cache_manager->symbiotic_connector",
+      "type": "data_flow",
+      "source_module": "redis_cache_manager",
+      "target_module": "symbiotic_connector",
+      "weight": 0.43342550233572624,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "symbiotic_connector->config",
+      "type": "module_boundary",
+      "source_module": "symbiotic_connector",
+      "target_module": "config",
+      "weight": 0.7027128671874507,
+      "synergy_potential": 0.9513564335937253,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "symbiotic_connector->redis_cache_manager",
+      "type": "cache_access",
+      "source_module": "symbiotic_connector",
+      "target_module": "redis_cache_manager",
+      "weight": 0.23315352346916773,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "hex_ring_optimizer->config",
+      "type": "module_boundary",
+      "source_module": "hex_ring_optimizer",
+      "target_module": "config",
+      "weight": 0.8369654584918529,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "api_server->hex_ring_optimizer",
+      "type": "archetype_routing",
+      "source_module": "api_server",
+      "target_module": "hex_ring_optimizer",
+      "weight": 0.5097961500205206,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    },
+    {
+      "id": "synergy_analyzer->redis_cache_manager",
+      "type": "cache_access",
+      "source_module": "synergy_analyzer",
+      "target_module": "redis_cache_manager",
+      "weight": 0.5773695513110776,
+      "synergy_potential": 1.0,
+      "hidden_cluster_id": null,
+      "metadata": {}
+    }
+  ],
+  "hidden_clusters": [
+    {
+      "id": "cross_domain_bridge",
+      "name": "Cross-Domain Bridge Network",
+      "intersections": [
+        "api_server->graph_engine",
+        "api_server->redis_cache_manager",
+        "api_server->synergy_analyzer",
+        "graph_engine->hex_ring_optimizer",
+        "synergy_analyzer->graph_engine",
+        "redis_cache_manager->symbiotic_connector",
+        "symbiotic_connector->redis_cache_manager",
+        "api_server->hex_ring_optimizer",
+        "synergy_analyzer->redis_cache_manager"
+      ],
+      "total_synergy": 9.0,
+      "activation_energy": 0.02197802197802198,
+      "cascade_multiplier": 2.0,
+      "discovery_method": "bridge_analysis",
+      "properties": {
+        "bridge_count": 9,
+        "areas_connected": [
+          "data",
+          "interface",
+          "analysis"
+        ]
+      }
+    },
+    {
+      "id": "hub_api_server",
+      "name": "Api Server Hub",
+      "intersections": [
+        "api_server->redis_cache_manager",
+        "api_server->graph_engine",
+        "api_server->config",
+        "api_server->symbiotic_connector",
+        "api_server->hex_ring_optimizer",
+        "api_server->synergy_analyzer"
+      ],
+      "total_synergy": 6.0,
+      "activation_energy": 0.04918032786885246,
+      "cascade_multiplier": 2.1,
+      "discovery_method": "hub_analysis",
+      "properties": {
+        "hub_module": "api_server",
+        "connection_count": 6
+      }
+    },
+    {
+      "id": "hub_config",
+      "name": "Config Hub",
+      "intersections": [
+        "hex_ring_optimizer->config",
+        "api_server->config",
+        "graph_engine->config",
+        "synergy_analyzer->config",
+        "redis_cache_manager->config",
+        "symbiotic_connector->config"
+      ],
+      "total_synergy": 5.8443492084573805,
+      "activation_energy": 0.05046809826939038,
+      "cascade_multiplier": 2.1,
+      "discovery_method": "hub_analysis",
+      "properties": {
+        "hub_module": "config",
+        "connection_count": 6
+      }
+    },
+    {
+      "id": "hub_synergy_analyzer",
+      "name": "Synergy Analyzer Hub",
+      "intersections": [
+        "synergy_analyzer->hex_ring_optimizer",
+        "synergy_analyzer->config",
+        "synergy_analyzer->redis_cache_manager",
+        "synergy_analyzer->graph_engine",
+        "api_server->synergy_analyzer"
+      ],
+      "total_synergy": 5.0,
+      "activation_energy": 0.058823529411764705,
+      "cascade_multiplier": 2.0,
+      "discovery_method": "hub_analysis",
+      "properties": {
+        "hub_module": "synergy_analyzer",
+        "connection_count": 5
+      }
+    },
+    {
+      "id": "hub_redis_cache_manager",
+      "name": "Redis Cache Manager Hub",
+      "intersections": [
+        "api_server->redis_cache_manager",
+        "symbiotic_connector->redis_cache_manager",
+        "redis_cache_manager->symbiotic_connector",
+        "synergy_analyzer->redis_cache_manager",
+        "redis_cache_manager->config"
+      ],
+      "total_synergy": 4.8929927748636555,
+      "activation_energy": 0.06008420470990811,
+      "cascade_multiplier": 2.0,
+      "discovery_method": "hub_analysis",
+      "properties": {
+        "hub_module": "redis_cache_manager",
+        "connection_count": 5
+      }
+    },
+    {
+      "id": "type_data_flow",
+      "name": "Data Flow Network",
+      "intersections": [
+        "api_server->graph_engine",
+        "graph_engine->hex_ring_optimizer",
+        "synergy_analyzer->hex_ring_optimizer",
+        "redis_cache_manager->symbiotic_connector"
+      ],
+      "total_synergy": 4.0,
+      "activation_energy": 0.12195121951219513,
+      "cascade_multiplier": 1.6,
+      "discovery_method": "type_clustering",
+      "properties": {
+        "intersection_type": "data_flow",
+        "cluster_size": 4
+      }
+    },
+    {
+      "id": "hub_graph_engine",
+      "name": "Graph Engine Hub",
+      "intersections": [
+        "graph_engine->hex_ring_optimizer",
+        "synergy_analyzer->graph_engine",
+        "api_server->graph_engine",
+        "graph_engine->config"
+      ],
+      "total_synergy": 4.0,
+      "activation_energy": 0.07317073170731708,
+      "cascade_multiplier": 1.9,
+      "discovery_method": "hub_analysis",
+      "properties": {
+        "hub_module": "graph_engine",
+        "connection_count": 4
+      }
+    },
+    {
+      "id": "hub_hex_ring_optimizer",
+      "name": "Hex Ring Optimizer Hub",
+      "intersections": [
+        "api_server->hex_ring_optimizer",
+        "graph_engine->hex_ring_optimizer",
+        "hex_ring_optimizer->config",
+        "synergy_analyzer->hex_ring_optimizer"
+      ],
+      "total_synergy": 4.0,
+      "activation_energy": 0.07317073170731708,
+      "cascade_multiplier": 1.9,
+      "discovery_method": "hub_analysis",
+      "properties": {
+        "hub_module": "hex_ring_optimizer",
+        "connection_count": 4
+      }
+    },
+    {
+      "id": "hub_symbiotic_connector",
+      "name": "Symbiotic Connector Hub",
+      "intersections": [
+        "redis_cache_manager->symbiotic_connector",
+        "symbiotic_connector->redis_cache_manager",
+        "api_server->symbiotic_connector",
+        "symbiotic_connector->config"
+      ],
+      "total_synergy": 3.9513564335937255,
+      "activation_energy": 0.07404927335260088,
+      "cascade_multiplier": 1.9,
+      "discovery_method": "hub_analysis",
+      "properties": {
+        "hub_module": "symbiotic_connector",
+        "connection_count": 4
+      }
+    },
+    {
+      "id": "chain_1",
+      "name": "Synergy Chain 2",
+      "intersections": [
+        "api_server->redis_cache_manager",
+        "redis_cache_manager->symbiotic_connector",
+        "symbiotic_connector->redis_cache_manager",
+        "redis_cache_manager->config"
+      ],
+      "total_synergy": 3.8929927748636555,
+      "activation_energy": 0.25043872012369117,
+      "cascade_multiplier": 1.8,
+      "discovery_method": "chain_analysis",
+      "properties": {
+        "chain_length": 4,
+        "start_module": "api_server",
+        "end_module": "config"
+      }
+    },
+    {
+      "id": "type_module_boundary",
+      "name": "Module Boundary Network",
+      "intersections": [
+        "graph_engine->config",
+        "redis_cache_manager->config",
+        "symbiotic_connector->config",
+        "hex_ring_optimizer->config"
+      ],
+      "total_synergy": 3.844349208457381,
+      "activation_energy": 0.12676362400365357,
+      "cascade_multiplier": 1.6,
+      "discovery_method": "type_clustering",
+      "properties": {
+        "intersection_type": "module_boundary",
+        "cluster_size": 4
+      }
+    },
+    {
+      "id": "type_cache_access",
+      "name": "Cache Access Network",
+      "intersections": [
+        "api_server->redis_cache_manager",
+        "symbiotic_connector->redis_cache_manager",
+        "synergy_analyzer->redis_cache_manager"
+      ],
+      "total_synergy": 3.0,
+      "activation_energy": 0.16129032258064516,
+      "cascade_multiplier": 1.45,
+      "discovery_method": "type_clustering",
+      "properties": {
+        "intersection_type": "cache_access",
+        "cluster_size": 3
+      }
+    },
+    {
+      "id": "chain_0",
+      "name": "Synergy Chain 1",
+      "intersections": [
+        "api_server->graph_engine",
+        "graph_engine->config"
+      ],
+      "total_synergy": 2.0,
+      "activation_energy": 0.47619047619047616,
+      "cascade_multiplier": 1.4,
+      "discovery_method": "chain_analysis",
+      "properties": {
+        "chain_length": 2,
+        "start_module": "api_server",
+        "end_module": "config"
+      }
+    },
+    {
+      "id": "chain_2",
+      "name": "Synergy Chain 3",
+      "intersections": [
+        "api_server->synergy_analyzer",
+        "synergy_analyzer->config"
+      ],
+      "total_synergy": 2.0,
+      "activation_energy": 0.47619047619047616,
+      "cascade_multiplier": 1.4,
+      "discovery_method": "chain_analysis",
+      "properties": {
+        "chain_length": 2,
+        "start_module": "api_server",
+        "end_module": "config"
+      }
+    },
+    {
+      "id": "chain_4",
+      "name": "Synergy Chain 5",
+      "intersections": [
+        "graph_engine->hex_ring_optimizer",
+        "hex_ring_optimizer->config"
+      ],
+      "total_synergy": 2.0,
+      "activation_energy": 0.47619047619047616,
+      "cascade_multiplier": 1.4,
+      "discovery_method": "chain_analysis",
+      "properties": {
+        "chain_length": 2,
+        "start_module": "graph_engine",
+        "end_module": "config"
+      }
+    },
+    {
+      "id": "type_tribunal_chain",
+      "name": "Tribunal Chain Network",
+      "intersections": [
+        "api_server->config",
+        "synergy_analyzer->config"
+      ],
+      "total_synergy": 2.0,
+      "activation_energy": 0.23809523809523808,
+      "cascade_multiplier": 1.3,
+      "discovery_method": "type_clustering",
+      "properties": {
+        "intersection_type": "tribunal_chain",
+        "cluster_size": 2
+      }
+    },
+    {
+      "id": "chain_3",
+      "name": "Synergy Chain 4",
+      "intersections": [
+        "api_server->symbiotic_connector",
+        "symbiotic_connector->config"
+      ],
+      "total_synergy": 1.9513564335937255,
+      "activation_energy": 0.48748232321972557,
+      "cascade_multiplier": 1.4,
+      "discovery_method": "chain_analysis",
+      "properties": {
+        "chain_length": 2,
+        "start_module": "api_server",
+        "end_module": "config"
+      }
+    }
+  ],
+  "cascade_analysis": {
+    "total_clusters": 17,
+    "total_cascade_potential": 8074.680497493442,
+    "activation_sequence": [
+      {
+        "cluster_id": "cross_domain_bridge",
+        "cluster_name": "Cross-Domain Bridge Network",
+        "activation_energy": 0.02197802197802198,
+        "cascade_multiplier": 2.0,
+        "resulting_energy": 2.0
+      },
+      {
+        "cluster_id": "hub_api_server",
+        "cluster_name": "Api Server Hub",
+        "activation_energy": 0.04918032786885246,
+        "cascade_multiplier": 2.1,
+        "resulting_energy": 4.2
+      },
+      {
+        "cluster_id": "hub_config",
+        "cluster_name": "Config Hub",
+        "activation_energy": 0.05046809826939038,
+        "cascade_multiplier": 2.1,
+        "resulting_energy": 8.82
+      },
+      {
+        "cluster_id": "hub_synergy_analyzer",
+        "cluster_name": "Synergy Analyzer Hub",
+        "activation_energy": 0.058823529411764705,
+        "cascade_multiplier": 2.0,
+        "resulting_energy": 17.64
+      },
+      {
+        "cluster_id": "hub_redis_cache_manager",
+        "cluster_name": "Redis Cache Manager Hub",
+        "activation_energy": 0.06008420470990811,
+        "cascade_multiplier": 2.0,
+        "resulting_energy": 35.28
+      },
+      {
+        "cluster_id": "hub_graph_engine",
+        "cluster_name": "Graph Engine Hub",
+        "activation_energy": 0.07317073170731708,
+        "cascade_multiplier": 1.9,
+        "resulting_energy": 67.032
+      },
+      {
+        "cluster_id": "hub_hex_ring_optimizer",
+        "cluster_name": "Hex Ring Optimizer Hub",
+        "activation_energy": 0.07317073170731708,
+        "cascade_multiplier": 1.9,
+        "resulting_energy": 127.36079999999998
+      },
+      {
+        "cluster_id": "hub_symbiotic_connector",
+        "cluster_name": "Symbiotic Connector Hub",
+        "activation_energy": 0.07404927335260088,
+        "cascade_multiplier": 1.9,
+        "resulting_energy": 241.98551999999995
+      },
+      {
+        "cluster_id": "type_data_flow",
+        "cluster_name": "Data Flow Network",
+        "activation_energy": 0.12195121951219513,
+        "cascade_multiplier": 1.6,
+        "resulting_energy": 387.17683199999993
+      },
+      {
+        "cluster_id": "type_module_boundary",
+        "cluster_name": "Module Boundary Network",
+        "activation_energy": 0.12676362400365357,
+        "cascade_multiplier": 1.6,
+        "resulting_energy": 619.4829311999999
+      },
+      {
+        "cluster_id": "type_cache_access",
+        "cluster_name": "Cache Access Network",
+        "activation_energy": 0.16129032258064516,
+        "cascade_multiplier": 1.45,
+        "resulting_energy": 898.2502502399999
+      },
+      {
+        "cluster_id": "type_tribunal_chain",
+        "cluster_name": "Tribunal Chain Network",
+        "activation_energy": 0.23809523809523808,
+        "cascade_multiplier": 1.3,
+        "resulting_energy": 1167.725325312
+      },
+      {
+        "cluster_id": "chain_1",
+        "cluster_name": "Synergy Chain 2",
+        "activation_energy": 0.25043872012369117,
+        "cascade_multiplier": 1.8,
+        "resulting_energy": 2101.9055855616
+      },
+      {
+        "cluster_id": "chain_0",
+        "cluster_name": "Synergy Chain 1",
+        "activation_energy": 0.47619047619047616,
+        "cascade_multiplier": 1.4,
+        "resulting_energy": 2942.66781978624
+      },
+      {
+        "cluster_id": "chain_2",
+        "cluster_name": "Synergy Chain 3",
+        "activation_energy": 0.47619047619047616,
+        "cascade_multiplier": 1.4,
+        "resulting_energy": 4119.7349477007365
+      },
+      {
+        "cluster_id": "chain_4",
+        "cluster_name": "Synergy Chain 5",
+        "activation_energy": 0.47619047619047616,
+        "cascade_multiplier": 1.4,
+        "resulting_energy": 5767.628926781031
+      },
+      {
+        "cluster_id": "chain_3",
+        "cluster_name": "Synergy Chain 4",
+        "activation_energy": 0.48748232321972557,
+        "cascade_multiplier": 1.4,
+        "resulting_energy": 8074.680497493442
+      }
+    ],
+    "cascade_chains": [],
+    "activated_clusters": 17
+  },
+  "recommendations": [
+    {
+      "id": "strengthen_high_synergy",
+      "priority": "high",
+      "title": "Strengthen High-Synergy Intersections",
+      "description": "These intersections have the highest synergy potential and should be optimized for maximum throughput.",
+      "affected_intersections": [
+        "api_server->config",
+        "api_server->graph_engine",
+        "api_server->redis_cache_manager",
+        "api_server->synergy_analyzer",
+        "api_server->symbiotic_connector"
+      ],
+      "actions": [
+        "Add caching at these intersection points",
+        "Implement lazy loading for data transfers",
+        "Create dedicated connection pools"
+      ]
+    },
+    {
+      "id": "activate_cascade_chain",
+      "priority": "high",
+      "title": "Activate Api Server Hub Cascade",
+      "description": "This cluster has the highest cascade multiplier (2.10x).",
+      "affected_intersections": [
+        "api_server->redis_cache_manager",
+        "api_server->graph_engine",
+        "api_server->config",
+        "api_server->symbiotic_connector",
+        "api_server->hex_ring_optimizer",
+        "api_server->synergy_analyzer"
+      ],
+      "actions": [
+        "Pre-warm cache entries for cluster members",
+        "Implement predictive loading based on access patterns",
+        "Create batch processing pipelines"
+      ]
+    },
+    {
+      "id": "optimize_bridges",
+      "priority": "medium",
+      "title": "Optimize Cross-Domain Bridges",
+      "description": "Data flow and graph query intersections are critical bridges between functional areas.",
+      "affected_intersections": [
+        "api_server->graph_engine",
+        "graph_engine->hex_ring_optimizer",
+        "synergy_analyzer->graph_engine",
+        "synergy_analyzer->hex_ring_optimizer",
+        "redis_cache_manager->symbiotic_connector"
+      ],
+      "actions": [
+        "Implement async data pipelines",
+        "Add query result caching",
+        "Create materialized views for common queries"
+      ]
+    },
+    {
+      "id": "improve_low_synergy",
+      "priority": "medium",
+      "title": "Improve Low-Synergy Intersections",
+      "description": "These intersections have untapped synergy potential.",
+      "affected_intersections": [
+        "redis_cache_manager->config",
+        "symbiotic_connector->config",
+        "api_server->config"
+      ],
+      "actions": [
+        "Review interface contracts for optimization opportunities",
+        "Consider merging related functionality",
+        "Implement shared state management"
+      ]
+    }
+  ],
+  "summary": {
+    "total_intersections": 17,
+    "total_hidden_clusters": 17,
+    "best_annealing_energy": 0.9908440710857283,
+    "total_cascade_potential": 8074.680497493442
+  }
+}

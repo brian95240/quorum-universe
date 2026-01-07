@@ -1,0 +1,139 @@
+{
+  "success": true,
+  "summary": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "duration_seconds": 1.13123
+  },
+  "results": [
+    {
+      "name": "Config Loading",
+      "status": "passed",
+      "duration_ms": 7.822742998541798,
+      "message": "Config loaded: 26 archetypes"
+    },
+    {
+      "name": "Archetype Definitions",
+      "status": "passed",
+      "duration_ms": 0.011866999557241797,
+      "message": "26 archetypes validated"
+    },
+    {
+      "name": "Philosopher Definitions",
+      "status": "passed",
+      "duration_ms": 0.008325001545017585,
+      "message": "6 philosophers + observer validated"
+    },
+    {
+      "name": "Hex Node Creation",
+      "status": "passed",
+      "duration_ms": 295.9769959998084,
+      "message": "Hex node created with 6 face affinities"
+    },
+    {
+      "name": "Hex Ring Rotation",
+      "status": "passed",
+      "duration_ms": 0.17708899758872576,
+      "message": "Ring rotation works correctly"
+    },
+    {
+      "name": "Hex Face Affinities",
+      "status": "passed",
+      "duration_ms": 0.051129001803928986,
+      "message": "Face affinities reflect cluster characteristics"
+    },
+    {
+      "name": "Hex Synergy Computation",
+      "status": "passed",
+      "duration_ms": 0.19499699919833802,
+      "message": "Synergy computed: 0.449"
+    },
+    {
+      "name": "Hex Ring Optimization",
+      "status": "passed",
+      "duration_ms": 43.45439300232101,
+      "message": "Optimization complete: 0.2912"
+    },
+    {
+      "name": "Cache Initialization",
+      "status": "passed",
+      "duration_ms": 7.042567998723825,
+      "message": "Cache initialized with 3 tiers"
+    },
+    {
+      "name": "Cache Set Get",
+      "status": "passed",
+      "duration_ms": 0.22620000163442455,
+      "message": "Set/Get operations work correctly"
+    },
+    {
+      "name": "Cache Compression",
+      "status": "passed",
+      "duration_ms": 0.6744700003764592,
+      "message": "Compression applied: 1 compressions"
+    },
+    {
+      "name": "Cache Tier Promotion",
+      "status": "passed",
+      "duration_ms": 0.23521999901277013,
+      "message": "Entry promoted to L1: 1 entries"
+    },
+    {
+      "name": "Cache Eviction",
+      "status": "passed",
+      "duration_ms": 0.2779120004561264,
+      "message": "LRU eviction triggered: 1 evictions"
+    },
+    {
+      "name": "Synergy Cluster Detection",
+      "status": "passed",
+      "duration_ms": 772.6319929970487,
+      "message": "Found 15 synergy clusters"
+    },
+    {
+      "name": "Burst Cluster Identification",
+      "status": "passed",
+      "duration_ms": 0.4803280025953427,
+      "message": "Found 8 burst clusters"
+    },
+    {
+      "name": "Hidden Connection Discovery",
+      "status": "passed",
+      "duration_ms": 0.5205849993217271,
+      "message": "Found 13 hidden connections"
+    },
+    {
+      "name": "Philosopher Chain Deliberation",
+      "status": "passed",
+      "duration_ms": 0.018025999452220276,
+      "message": "6-philosopher chain deliberation complete"
+    },
+    {
+      "name": "Observer Consensus Threshold",
+      "status": "passed",
+      "duration_ms": 0.0072119983087759465,
+      "message": "Observer threshold: 0.92"
+    },
+    {
+      "name": "No External Network Calls",
+      "status": "passed",
+      "duration_ms": 0.8672389994899277,
+      "message": "No external network calls detected"
+    },
+    {
+      "name": "Data Isolation",
+      "status": "passed",
+      "duration_ms": 0.13969300198368728,
+      "message": "Cache instances are isolated"
+    },
+    {
+      "name": "Deterministic Outputs",
+      "status": "passed",
+      "duration_ms": 0.05718499960494228,
+      "message": "Outputs are deterministic"
+    }
+  ],
+  "timestamp": "2026-01-07T18:04:26.128674"
+}

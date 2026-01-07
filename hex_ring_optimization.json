@@ -1,0 +1,1776 @@
+{
+  "timestamp": "2026-01-07T17:45:34.786209",
+  "visualization": {
+    "rings": [
+      {
+        "level": 0,
+        "size": 1,
+        "rotation": 0,
+        "nodes": [
+          {
+            "id": "mensa_orthogonal",
+            "name": "Mensa Orthogonal",
+            "cluster": "meta_cognitive",
+            "domains": [
+              "puzzles",
+              "patterns",
+              "lateral_thinking"
+            ],
+            "corpus_size_gb": 4,
+            "position": 0,
+            "angle": 0,
+            "face_affinities": {
+              "THEORETICAL": 0.95,
+              "EMPIRICAL": 0.5,
+              "METHODOLOGICAL": 0.75,
+              "HISTORICAL": 0.7,
+              "APPLIED": 0.5,
+              "PHILOSOPHICAL": 0.95
+            }
+          },
+          {
+            "id": "philosophy_tribunal",
+            "name": "Philosophy Tribunal",
+            "cluster": "meta_cognitive",
+            "domains": [
+              "epistemology",
+              "ethics",
+              "logic",
+              "metaphysics"
+            ],
+            "corpus_size_gb": 20,
+            "position": 0,
+            "angle": 0,
+            "face_affinities": {
+              "THEORETICAL": 1.0,
+              "EMPIRICAL": 0.6,
+              "METHODOLOGICAL": 0.75,
+              "HISTORICAL": 0.7,
+              "APPLIED": 0.5,
+              "PHILOSOPHICAL": 0.95
+            }
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "size": 6,
+        "rotation": 5,
+        "nodes": [
+          {
+            "id": "mit_engineering",
+            "name": "Mit Engineering",
+            "cluster": "stem_core",
+            "domains": [
+              "engineering",
+              "robotics",
+              "systems",
+              "design"
+            ],
+            "corpus_size_gb": 160,
+            "position": 5,
+            "angle": 5.235987755982989,
+            "face_affinities": {
+              "THEORETICAL": 0.9,
+              "EMPIRICAL": 0.85,
+              "METHODOLOGICAL": 0.9,
+              "HISTORICAL": 0.4,
+              "APPLIED": 0.85,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "caltech_physics",
+            "name": "Caltech Physics",
+            "cluster": "stem_core",
+            "domains": [
+              "physics",
+              "cosmology",
+              "quantum",
+              "relativity"
+            ],
+            "corpus_size_gb": 86,
+            "position": 0,
+            "angle": 0.0,
+            "face_affinities": {
+              "THEORETICAL": 1.0,
+              "EMPIRICAL": 0.95,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.4,
+              "APPLIED": 0.7,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "princeton_math",
+            "name": "Princeton Math",
+            "cluster": "stem_core",
+            "domains": [
+              "mathematics",
+              "proof",
+              "analysis",
+              "topology"
+            ],
+            "corpus_size_gb": 22,
+            "position": 1,
+            "angle": 1.0471975511965976,
+            "face_affinities": {
+              "THEORETICAL": 1.0,
+              "EMPIRICAL": 0.85,
+              "METHODOLOGICAL": 0.9,
+              "HISTORICAL": 0.4,
+              "APPLIED": 0.7,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "harvard_med",
+            "name": "Harvard Med",
+            "cluster": "life_systems",
+            "domains": [
+              "medicine",
+              "clinical",
+              "diagnostics",
+              "physiology"
+            ],
+            "corpus_size_gb": 65,
+            "position": 2,
+            "angle": 2.0943951023931953,
+            "face_affinities": {
+              "THEORETICAL": 0.7,
+              "EMPIRICAL": 1.0,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.5,
+              "APPLIED": 1.0,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "broad_genomics",
+            "name": "Broad Genomics",
+            "cluster": "life_systems",
+            "domains": [
+              "genomics",
+              "evolution",
+              "molecular_biology",
+              "genetics"
+            ],
+            "corpus_size_gb": 120,
+            "position": 3,
+            "angle": 3.141592653589793,
+            "face_affinities": {
+              "THEORETICAL": 0.7,
+              "EMPIRICAL": 1.0,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.5,
+              "APPLIED": 0.95,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "complexity_science",
+            "name": "Complexity Science",
+            "cluster": "stem_core",
+            "domains": [
+              "complexity",
+              "emergence",
+              "networks",
+              "chaos"
+            ],
+            "corpus_size_gb": 15,
+            "position": 4,
+            "angle": 4.1887902047863905,
+            "face_affinities": {
+              "THEORETICAL": 0.9,
+              "EMPIRICAL": 0.85,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.4,
+              "APPLIED": 0.7,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "longevity_research",
+            "name": "Longevity Research",
+            "cluster": "life_systems",
+            "domains": [
+              "longevity",
+              "aging",
+              "regeneration",
+              "biomarkers"
+            ],
+            "corpus_size_gb": 12,
+            "position": 5,
+            "angle": 5.235987755982989,
+            "face_affinities": {
+              "THEORETICAL": 0.7,
+              "EMPIRICAL": 0.95,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.5,
+              "APPLIED": 0.85,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "quantum_computing",
+            "name": "Quantum Computing",
+            "cluster": "stem_core",
+            "domains": [
+              "quantum_computing",
+              "qubits",
+              "quantum_algorithms",
+              "cryptography"
+            ],
+            "corpus_size_gb": 10,
+            "position": 0,
+            "angle": 0.0,
+            "face_affinities": {
+              "THEORETICAL": 0.9,
+              "EMPIRICAL": 0.85,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.4,
+              "APPLIED": 0.7,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "neuroscience_cognitive",
+            "name": "Neuroscience Cognitive",
+            "cluster": "life_systems",
+            "domains": [
+              "neuroscience",
+              "cognitive_science",
+              "brain_mapping",
+              "consciousness"
+            ],
+            "corpus_size_gb": 45,
+            "position": 1,
+            "angle": 1.0471975511965976,
+            "face_affinities": {
+              "THEORETICAL": 0.7999999999999999,
+              "EMPIRICAL": 0.95,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.5,
+              "APPLIED": 0.95,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "systems_biology",
+            "name": "Systems Biology",
+            "cluster": "life_systems",
+            "domains": [
+              "systems_biology",
+              "metabolomics",
+              "proteomics",
+              "bioinformatics"
+            ],
+            "corpus_size_gb": 35,
+            "position": 2,
+            "angle": 2.0943951023931953,
+            "face_affinities": {
+              "THEORETICAL": 0.7,
+              "EMPIRICAL": 1.0,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.5,
+              "APPLIED": 0.95,
+              "PHILOSOPHICAL": 0.5
+            }
+          },
+          {
+            "id": "climate_earth_systems",
+            "name": "Climate Earth Systems",
+            "cluster": "stem_core",
+            "domains": [
+              "climate_science",
+              "earth_systems",
+              "sustainability",
+              "ecology"
+            ],
+            "corpus_size_gb": 50,
+            "position": 3,
+            "angle": 3.141592653589793,
+            "face_affinities": {
+              "THEORETICAL": 1.0,
+              "EMPIRICAL": 0.85,
+              "METHODOLOGICAL": 0.8,
+              "HISTORICAL": 0.4,
+              "APPLIED": 0.7999999999999999,
+              "PHILOSOPHICAL": 0.5
+            }
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "size": 12,
+        "rotation": 4,
+        "nodes": [
+          {
+            "id": "stanford_cs",
+            "name": "Stanford Cs",
+            "cluster": "applied_tech",
+            "domains": [
+              "computer_science",
+              "machine_learning",
+              "algorithms"
+            ],
+            "corpus_size_gb": 18,
+            "position": 4,
+            "angle": 2.0943951023931953,
+            "face_affinities": {
+              "THEORETICAL": 0.6,
+              "EMPIRICAL": 0.8,
+              "METHODOLOGICAL": 0.85,
+              "HISTORICAL": 0.3,
+              "APPLIED": 0.95,
+              "PHILOSOPHICAL": 0.4
+            }
+          },
+          {
+            "id": "yale_law",
+            "name": "Yale Law",
+            "cluster": "human_systems",
+            "domains": [
+              "law",
+              "policy",
+              "rights",
+              "precedent"
+            ],
+            "corpus_size_gb": 42,
+            "position": 5,
+            "angle": 2.6179938779914944,
+            "face_affinities": {
+              "THEORETICAL": 0.75,
+              "EMPIRICAL": 0.6,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 0.85,
+              "APPLIED": 0.7,
+              "PHILOSOPHICAL": 0.8
+            }
+          },
+          {
+            "id": "oxford_classics",
+            "name": "Oxford Classics",
+            "cluster": "human_systems",
+            "domains": [
+              "classics",
+              "philosophy",
+              "history",
+              "literature"
+            ],
+            "corpus_size_gb": 35,
+            "position": 6,
+            "angle": 3.141592653589793,
+            "face_affinities": {
+              "THEORETICAL": 0.85,
+              "EMPIRICAL": 0.6,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 1.0,
+              "APPLIED": 0.7,
+              "PHILOSOPHICAL": 1.0
+            }
+          },
+          {
+            "id": "chicago_economics",
+            "name": "Chicago Economics",
+            "cluster": "human_systems",
+            "domains": [
+              "economics",
+              "incentives",
+              "markets",
+              "behavior"
+            ],
+            "corpus_size_gb": 28,
+            "position": 7,
+            "angle": 3.6651914291880923,
+            "face_affinities": {
+              "THEORETICAL": 0.75,
+              "EMPIRICAL": 0.6,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 0.85,
+              "APPLIED": 0.7,
+              "PHILOSOPHICAL": 0.8
+            }
+          },
+          {
+            "id": "hacker_insurgent",
+            "name": "Hacker Insurgent",
+            "cluster": "applied_tech",
+            "domains": [
+              "hacking",
+              "security",
+              "foss",
+              "freedom"
+            ],
+            "corpus_size_gb": 3,
+            "position": 8,
+            "angle": 4.1887902047863905,
+            "face_affinities": {
+              "THEORETICAL": 0.6,
+              "EMPIRICAL": 0.8,
+              "METHODOLOGICAL": 0.85,
+              "HISTORICAL": 0.3,
+              "APPLIED": 0.95,
+              "PHILOSOPHICAL": 0.4
+            }
+          },
+          {
+            "id": "ai_safety",
+            "name": "Ai Safety",
+            "cluster": "applied_tech",
+            "domains": [
+              "ai_safety",
+              "alignment",
+              "x-risk",
+              "ethics"
+            ],
+            "corpus_size_gb": 8,
+            "position": 9,
+            "angle": 4.71238898038469,
+            "face_affinities": {
+              "THEORETICAL": 0.7,
+              "EMPIRICAL": 0.8,
+              "METHODOLOGICAL": 0.85,
+              "HISTORICAL": 0.3,
+              "APPLIED": 1.0,
+              "PHILOSOPHICAL": 0.4
+            }
+          },
+          {
+            "id": "robotics_embodied_ai",
+            "name": "Robotics Embodied Ai",
+            "cluster": "applied_tech",
+            "domains": [
+              "robotics",
+              "embodied_ai",
+              "control_systems",
+              "perception"
+            ],
+            "corpus_size_gb": 25,
+            "position": 10,
+            "angle": 5.235987755982989,
+            "face_affinities": {
+              "THEORETICAL": 0.7,
+              "EMPIRICAL": 0.8,
+              "METHODOLOGICAL": 0.85,
+              "HISTORICAL": 0.3,
+              "APPLIED": 1.0,
+              "PHILOSOPHICAL": 0.4
+            }
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "size": 18,
+        "rotation": 0,
+        "nodes": [
+          {
+            "id": "beijing_classical",
+            "name": "Beijing Classical",
+            "cluster": "non_western",
+            "domains": [
+              "strategy",
+              "eastern_philosophy",
+              "traditional_medicine"
+            ],
+            "corpus_size_gb": 8,
+            "position": 0,
+            "angle": 0.0,
+            "face_affinities": {
+              "THEORETICAL": 0.9,
+              "EMPIRICAL": 0.6,
+              "METHODOLOGICAL": 0.6,
+              "HISTORICAL": 0.95,
+              "APPLIED": 0.75,
+              "PHILOSOPHICAL": 1.0
+            }
+          },
+          {
+            "id": "baghdad_golden",
+            "name": "Baghdad Golden",
+            "cluster": "non_western",
+            "domains": [
+              "islamic_science",
+              "mathematics",
+              "optics",
+              "medicine"
+            ],
+            "corpus_size_gb": 12,
+            "position": 1,
+            "angle": 0.3490658503988659,
+            "face_affinities": {
+              "THEORETICAL": 0.9500000000000001,
+              "EMPIRICAL": 0.6,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 0.95,
+              "APPLIED": 0.75,
+              "PHILOSOPHICAL": 0.9
+            }
+          },
+          {
+            "id": "nalanda_vedic",
+            "name": "Nalanda Vedic",
+            "cluster": "non_western",
+            "domains": [
+              "indian_mathematics",
+              "ayurveda",
+              "logic",
+              "consciousness"
+            ],
+            "corpus_size_gb": 6,
+            "position": 2,
+            "angle": 0.6981317007977318,
+            "face_affinities": {
+              "THEORETICAL": 0.9500000000000001,
+              "EMPIRICAL": 0.5,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 0.95,
+              "APPLIED": 0.6,
+              "PHILOSOPHICAL": 0.9
+            }
+          },
+          {
+            "id": "berkeley_psychedelics",
+            "name": "Berkeley Psychedelics",
+            "cluster": "creative_synthesis",
+            "domains": [
+              "consciousness",
+              "psychedelics",
+              "phenomenology"
+            ],
+            "corpus_size_gb": 8,
+            "position": 3,
+            "angle": 1.0471975511965976,
+            "face_affinities": {
+              "THEORETICAL": 0.6,
+              "EMPIRICAL": 0.55,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 0.6,
+              "APPLIED": 0.8,
+              "PHILOSOPHICAL": 0.75
+            }
+          },
+          {
+            "id": "bauhaus_design",
+            "name": "Bauhaus Design",
+            "cluster": "creative_synthesis",
+            "domains": [
+              "design",
+              "architecture",
+              "aesthetics",
+              "systems_thinking"
+            ],
+            "corpus_size_gb": 5,
+            "position": 4,
+            "angle": 1.3962634015954636,
+            "face_affinities": {
+              "THEORETICAL": 0.6,
+              "EMPIRICAL": 0.55,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 0.6,
+              "APPLIED": 0.8,
+              "PHILOSOPHICAL": 0.75
+            }
+          },
+          {
+            "id": "indigenous_ecology",
+            "name": "Indigenous Ecology",
+            "cluster": "creative_synthesis",
+            "domains": [
+              "ecology",
+              "traditional_knowledge",
+              "sustainability"
+            ],
+            "corpus_size_gb": 4,
+            "position": 5,
+            "angle": 1.7453292519943295,
+            "face_affinities": {
+              "THEORETICAL": 0.7,
+              "EMPIRICAL": 0.55,
+              "METHODOLOGICAL": 0.7,
+              "HISTORICAL": 0.6,
+              "APPLIED": 0.9,
+              "PHILOSOPHICAL": 0.75
+            }
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "beijing_classical",
+        "target": "baghdad_golden",
+        "synergy": 0.3733333333333333
+      },
+      {
+        "source": "baghdad_golden",
+        "target": "nalanda_vedic",
+        "synergy": 0.36124999999999996
+      },
+      {
+        "source": "yale_law",
+        "target": "oxford_classics",
+        "synergy": 0.34229166666666666
+      },
+      {
+        "source": "oxford_classics",
+        "target": "chicago_economics",
+        "synergy": 0.34229166666666666
+      },
+      {
+        "source": "neuroscience_cognitive",
+        "target": "harvard_med",
+        "synergy": 0.33999999999999997
+      },
+      {
+        "source": "harvard_med",
+        "target": "broad_genomics",
+        "synergy": 0.3383333333333334
+      },
+      {
+        "source": "systems_biology",
+        "target": "broad_genomics",
+        "synergy": 0.334375
+      },
+      {
+        "source": "mit_engineering",
+        "target": "caltech_physics",
+        "synergy": 0.3260416666666667
+      },
+      {
+        "source": "caltech_physics",
+        "target": "princeton_math",
+        "synergy": 0.32562500000000005
+      },
+      {
+        "source": "robotics_embodied_ai",
+        "target": "mit_engineering",
+        "synergy": 0.31327380952380957
+      },
+      {
+        "source": "mit_engineering",
+        "target": "complexity_science",
+        "synergy": 0.3114583333333334
+      },
+      {
+        "source": "quantum_computing",
+        "target": "mit_engineering",
+        "synergy": 0.3114583333333334
+      },
+      {
+        "source": "quantum_computing",
+        "target": "princeton_math",
+        "synergy": 0.3102083333333333
+      },
+      {
+        "source": "climate_earth_systems",
+        "target": "complexity_science",
+        "synergy": 0.30937500000000007
+      },
+      {
+        "source": "nalanda_vedic",
+        "target": "berkeley_psychedelics",
+        "synergy": 0.30499999999999994
+      },
+      {
+        "source": "ai_safety",
+        "target": "robotics_embodied_ai",
+        "synergy": 0.2985416666666667
+      },
+      {
+        "source": "hacker_insurgent",
+        "target": "ai_safety",
+        "synergy": 0.2885416666666667
+      },
+      {
+        "source": "neuroscience_cognitive",
+        "target": "caltech_physics",
+        "synergy": 0.288125
+      },
+      {
+        "source": "climate_earth_systems",
+        "target": "harvard_med",
+        "synergy": 0.2866666666666667
+      },
+      {
+        "source": "princeton_math",
+        "target": "harvard_med",
+        "synergy": 0.285
+      },
+      {
+        "source": "oxford_classics",
+        "target": "broad_genomics",
+        "synergy": 0.285
+      },
+      {
+        "source": "systems_biology",
+        "target": "princeton_math",
+        "synergy": 0.28208333333333335
+      },
+      {
+        "source": "bauhaus_design",
+        "target": "indigenous_ecology",
+        "synergy": 0.2779166666666667
+      },
+      {
+        "source": "longevity_research",
+        "target": "caltech_physics",
+        "synergy": 0.27395833333333336
+      },
+      {
+        "source": "broad_genomics",
+        "target": "complexity_science",
+        "synergy": 0.26958333333333334
+      },
+      {
+        "source": "yale_law",
+        "target": "harvard_med",
+        "synergy": 0.26749999999999996
+      },
+      {
+        "source": "stanford_cs",
+        "target": "harvard_med",
+        "synergy": 0.26666666666666666
+      },
+      {
+        "source": "berkeley_psychedelics",
+        "target": "bauhaus_design",
+        "synergy": 0.26625000000000004
+      },
+      {
+        "source": "chicago_economics",
+        "target": "broad_genomics",
+        "synergy": 0.26458333333333334
+      },
+      {
+        "source": "princeton_math",
+        "target": "mensa_orthogonal",
+        "synergy": 0.26291666666666663
+      },
+      {
+        "source": "neuroscience_cognitive",
+        "target": "mensa_orthogonal",
+        "synergy": 0.26125000000000004
+      },
+      {
+        "source": "mit_engineering",
+        "target": "mensa_orthogonal",
+        "synergy": 0.26125
+      },
+      {
+        "source": "caltech_physics",
+        "target": "mensa_orthogonal",
+        "synergy": 0.2608333333333333
+      },
+      {
+        "source": "climate_earth_systems",
+        "target": "mensa_orthogonal",
+        "synergy": 0.2608333333333333
+      },
+      {
+        "source": "longevity_research",
+        "target": "complexity_science",
+        "synergy": 0.2602083333333334
+      },
+      {
+        "source": "harvard_med",
+        "target": "mensa_orthogonal",
+        "synergy": 0.2575
+      },
+      {
+        "source": "broad_genomics",
+        "target": "mensa_orthogonal",
+        "synergy": 0.2554166666666667
+      },
+      {
+        "source": "systems_biology",
+        "target": "mensa_orthogonal",
+        "synergy": 0.2554166666666667
+      },
+      {
+        "source": "ai_safety",
+        "target": "complexity_science",
+        "synergy": 0.2508333333333334
+      },
+      {
+        "source": "longevity_research",
+        "target": "mensa_orthogonal",
+        "synergy": 0.24916666666666665
+      },
+      {
+        "source": "complexity_science",
+        "target": "mensa_orthogonal",
+        "synergy": 0.24875000000000003
+      },
+      {
+        "source": "quantum_computing",
+        "target": "mensa_orthogonal",
+        "synergy": 0.24875000000000003
+      },
+      {
+        "source": "hacker_insurgent",
+        "target": "complexity_science",
+        "synergy": 0.24041666666666672
+      },
+      {
+        "source": "stanford_cs",
+        "target": "yale_law",
+        "synergy": 0.23041666666666663
+      },
+      {
+        "source": "chicago_economics",
+        "target": "hacker_insurgent",
+        "synergy": 0.23041666666666663
+      }
+    ],
+    "total_synergy": 0.2911515937019969,
+    "optimization_state": {
+      "0": 0,
+      "1": 5,
+      "2": 4,
+      "3": 0
+    }
+  },
+  "adjacencies": [
+    {
+      "source": "beijing_classical",
+      "source_name": "Beijing Classical",
+      "source_ring": 3,
+      "target": "baghdad_golden",
+      "target_name": "Baghdad Golden",
+      "target_ring": 3,
+      "synergy": 0.3733333333333333,
+      "face_alignment": {
+        "theoretical": 0.855,
+        "empirical": 0.36,
+        "methodological": 0.42,
+        "historical": 0.902,
+        "applied": 0.562,
+        "philosophical": 0.9
+      }
+    },
+    {
+      "source": "baghdad_golden",
+      "source_name": "Baghdad Golden",
+      "source_ring": 3,
+      "target": "beijing_classical",
+      "target_name": "Beijing Classical",
+      "target_ring": 3,
+      "synergy": 0.3733333333333333,
+      "face_alignment": {
+        "theoretical": 0.855,
+        "empirical": 0.36,
+        "methodological": 0.42,
+        "historical": 0.902,
+        "applied": 0.562,
+        "philosophical": 0.9
+      }
+    },
+    {
+      "source": "baghdad_golden",
+      "source_name": "Baghdad Golden",
+      "source_ring": 3,
+      "target": "nalanda_vedic",
+      "target_name": "Nalanda Vedic",
+      "target_ring": 3,
+      "synergy": 0.36124999999999996,
+      "face_alignment": {
+        "theoretical": 0.903,
+        "empirical": 0.3,
+        "methodological": 0.49,
+        "historical": 0.902,
+        "applied": 0.45,
+        "philosophical": 0.81
+      }
+    },
+    {
+      "source": "nalanda_vedic",
+      "source_name": "Nalanda Vedic",
+      "source_ring": 3,
+      "target": "baghdad_golden",
+      "target_name": "Baghdad Golden",
+      "target_ring": 3,
+      "synergy": 0.36124999999999996,
+      "face_alignment": {
+        "theoretical": 0.903,
+        "empirical": 0.3,
+        "methodological": 0.49,
+        "historical": 0.902,
+        "applied": 0.45,
+        "philosophical": 0.81
+      }
+    },
+    {
+      "source": "yale_law",
+      "source_name": "Yale Law",
+      "source_ring": 2,
+      "target": "oxford_classics",
+      "target_name": "Oxford Classics",
+      "target_ring": 2,
+      "synergy": 0.34229166666666666,
+      "face_alignment": {
+        "theoretical": 0.637,
+        "empirical": 0.36,
+        "methodological": 0.49,
+        "historical": 0.85,
+        "applied": 0.49,
+        "philosophical": 0.8
+      }
+    },
+    {
+      "source": "oxford_classics",
+      "source_name": "Oxford Classics",
+      "source_ring": 2,
+      "target": "yale_law",
+      "target_name": "Yale Law",
+      "target_ring": 2,
+      "synergy": 0.34229166666666666,
+      "face_alignment": {
+        "theoretical": 0.637,
+        "empirical": 0.36,
+        "methodological": 0.49,
+        "historical": 0.85,
+        "applied": 0.49,
+        "philosophical": 0.8
+      }
+    },
+    {
+      "source": "oxford_classics",
+      "source_name": "Oxford Classics",
+      "source_ring": 2,
+      "target": "chicago_economics",
+      "target_name": "Chicago Economics",
+      "target_ring": 2,
+      "synergy": 0.34229166666666666,
+      "face_alignment": {
+        "theoretical": 0.637,
+        "empirical": 0.36,
+        "methodological": 0.49,
+        "historical": 0.85,
+        "applied": 0.49,
+        "philosophical": 0.8
+      }
+    },
+    {
+      "source": "chicago_economics",
+      "source_name": "Chicago Economics",
+      "source_ring": 2,
+      "target": "oxford_classics",
+      "target_name": "Oxford Classics",
+      "target_ring": 2,
+      "synergy": 0.34229166666666666,
+      "face_alignment": {
+        "theoretical": 0.637,
+        "empirical": 0.36,
+        "methodological": 0.49,
+        "historical": 0.85,
+        "applied": 0.49,
+        "philosophical": 0.8
+      }
+    },
+    {
+      "source": "neuroscience_cognitive",
+      "source_name": "Neuroscience Cognitive",
+      "source_ring": 1,
+      "target": "harvard_med",
+      "target_name": "Harvard Med",
+      "target_ring": 1,
+      "synergy": 0.33999999999999997,
+      "face_alignment": {
+        "theoretical": 0.56,
+        "empirical": 0.95,
+        "methodological": 0.64,
+        "historical": 0.25,
+        "applied": 0.95,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "harvard_med",
+      "source_name": "Harvard Med",
+      "source_ring": 1,
+      "target": "broad_genomics",
+      "target_name": "Broad Genomics",
+      "target_ring": 1,
+      "synergy": 0.3383333333333334,
+      "face_alignment": {
+        "theoretical": 0.49,
+        "empirical": 1.0,
+        "methodological": 0.64,
+        "historical": 0.25,
+        "applied": 0.95,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "broad_genomics",
+      "source_name": "Broad Genomics",
+      "source_ring": 1,
+      "target": "harvard_med",
+      "target_name": "Harvard Med",
+      "target_ring": 1,
+      "synergy": 0.3383333333333334,
+      "face_alignment": {
+        "theoretical": 0.49,
+        "empirical": 1.0,
+        "methodological": 0.64,
+        "historical": 0.25,
+        "applied": 0.95,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "systems_biology",
+      "source_name": "Systems Biology",
+      "source_ring": 1,
+      "target": "broad_genomics",
+      "target_name": "Broad Genomics",
+      "target_ring": 1,
+      "synergy": 0.334375,
+      "face_alignment": {
+        "theoretical": 0.49,
+        "empirical": 1.0,
+        "methodological": 0.64,
+        "historical": 0.25,
+        "applied": 0.902,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "mit_engineering",
+      "source_name": "Mit Engineering",
+      "source_ring": 1,
+      "target": "caltech_physics",
+      "target_name": "Caltech Physics",
+      "target_ring": 1,
+      "synergy": 0.3260416666666667,
+      "face_alignment": {
+        "theoretical": 0.9,
+        "empirical": 0.807,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.595,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "caltech_physics",
+      "source_name": "Caltech Physics",
+      "source_ring": 1,
+      "target": "mit_engineering",
+      "target_name": "Mit Engineering",
+      "target_ring": 1,
+      "synergy": 0.3260416666666667,
+      "face_alignment": {
+        "theoretical": 0.9,
+        "empirical": 0.807,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.595,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "caltech_physics",
+      "source_name": "Caltech Physics",
+      "source_ring": 1,
+      "target": "princeton_math",
+      "target_name": "Princeton Math",
+      "target_ring": 1,
+      "synergy": 0.32562500000000005,
+      "face_alignment": {
+        "theoretical": 1.0,
+        "empirical": 0.807,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.49,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "princeton_math",
+      "source_name": "Princeton Math",
+      "source_ring": 1,
+      "target": "caltech_physics",
+      "target_name": "Caltech Physics",
+      "target_ring": 1,
+      "synergy": 0.32562500000000005,
+      "face_alignment": {
+        "theoretical": 1.0,
+        "empirical": 0.807,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.49,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "robotics_embodied_ai",
+      "source_name": "Robotics Embodied Ai",
+      "source_ring": 2,
+      "target": "mit_engineering",
+      "target_name": "Mit Engineering",
+      "target_ring": 1,
+      "synergy": 0.31327380952380957,
+      "face_alignment": {
+        "theoretical": 0.63,
+        "empirical": 0.68,
+        "methodological": 0.765,
+        "historical": 0.12,
+        "applied": 0.85,
+        "philosophical": 0.2
+      }
+    },
+    {
+      "source": "mit_engineering",
+      "source_name": "Mit Engineering",
+      "source_ring": 1,
+      "target": "complexity_science",
+      "target_name": "Complexity Science",
+      "target_ring": 1,
+      "synergy": 0.3114583333333334,
+      "face_alignment": {
+        "theoretical": 0.81,
+        "empirical": 0.722,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.595,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "complexity_science",
+      "source_name": "Complexity Science",
+      "source_ring": 1,
+      "target": "mit_engineering",
+      "target_name": "Mit Engineering",
+      "target_ring": 1,
+      "synergy": 0.3114583333333334,
+      "face_alignment": {
+        "theoretical": 0.81,
+        "empirical": 0.722,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.595,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "quantum_computing",
+      "source_name": "Quantum Computing",
+      "source_ring": 1,
+      "target": "mit_engineering",
+      "target_name": "Mit Engineering",
+      "target_ring": 1,
+      "synergy": 0.3114583333333334,
+      "face_alignment": {
+        "theoretical": 0.81,
+        "empirical": 0.722,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.595,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "quantum_computing",
+      "source_name": "Quantum Computing",
+      "source_ring": 1,
+      "target": "princeton_math",
+      "target_name": "Princeton Math",
+      "target_ring": 1,
+      "synergy": 0.3102083333333333,
+      "face_alignment": {
+        "theoretical": 0.9,
+        "empirical": 0.722,
+        "methodological": 0.72,
+        "historical": 0.16,
+        "applied": 0.49,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "climate_earth_systems",
+      "source_name": "Climate Earth Systems",
+      "source_ring": 1,
+      "target": "complexity_science",
+      "target_name": "Complexity Science",
+      "target_ring": 1,
+      "synergy": 0.30937500000000007,
+      "face_alignment": {
+        "theoretical": 0.9,
+        "empirical": 0.722,
+        "methodological": 0.64,
+        "historical": 0.16,
+        "applied": 0.56,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "nalanda_vedic",
+      "source_name": "Nalanda Vedic",
+      "source_ring": 3,
+      "target": "berkeley_psychedelics",
+      "target_name": "Berkeley Psychedelics",
+      "target_ring": 3,
+      "synergy": 0.30499999999999994,
+      "face_alignment": {
+        "theoretical": 0.57,
+        "empirical": 0.275,
+        "methodological": 0.49,
+        "historical": 0.57,
+        "applied": 0.48,
+        "philosophical": 0.675
+      }
+    },
+    {
+      "source": "berkeley_psychedelics",
+      "source_name": "Berkeley Psychedelics",
+      "source_ring": 3,
+      "target": "nalanda_vedic",
+      "target_name": "Nalanda Vedic",
+      "target_ring": 3,
+      "synergy": 0.30499999999999994,
+      "face_alignment": {
+        "theoretical": 0.57,
+        "empirical": 0.275,
+        "methodological": 0.49,
+        "historical": 0.57,
+        "applied": 0.48,
+        "philosophical": 0.675
+      }
+    },
+    {
+      "source": "ai_safety",
+      "source_name": "Ai Safety",
+      "source_ring": 2,
+      "target": "robotics_embodied_ai",
+      "target_name": "Robotics Embodied Ai",
+      "target_ring": 2,
+      "synergy": 0.2985416666666667,
+      "face_alignment": {
+        "theoretical": 0.49,
+        "empirical": 0.64,
+        "methodological": 0.722,
+        "historical": 0.09,
+        "applied": 1.0,
+        "philosophical": 0.16
+      }
+    },
+    {
+      "source": "robotics_embodied_ai",
+      "source_name": "Robotics Embodied Ai",
+      "source_ring": 2,
+      "target": "ai_safety",
+      "target_name": "Ai Safety",
+      "target_ring": 2,
+      "synergy": 0.2985416666666667,
+      "face_alignment": {
+        "theoretical": 0.49,
+        "empirical": 0.64,
+        "methodological": 0.722,
+        "historical": 0.09,
+        "applied": 1.0,
+        "philosophical": 0.16
+      }
+    },
+    {
+      "source": "hacker_insurgent",
+      "source_name": "Hacker Insurgent",
+      "source_ring": 2,
+      "target": "ai_safety",
+      "target_name": "Ai Safety",
+      "target_ring": 2,
+      "synergy": 0.2885416666666667,
+      "face_alignment": {
+        "theoretical": 0.42,
+        "empirical": 0.64,
+        "methodological": 0.722,
+        "historical": 0.09,
+        "applied": 0.95,
+        "philosophical": 0.16
+      }
+    },
+    {
+      "source": "ai_safety",
+      "source_name": "Ai Safety",
+      "source_ring": 2,
+      "target": "hacker_insurgent",
+      "target_name": "Hacker Insurgent",
+      "target_ring": 2,
+      "synergy": 0.2885416666666667,
+      "face_alignment": {
+        "theoretical": 0.42,
+        "empirical": 0.64,
+        "methodological": 0.722,
+        "historical": 0.09,
+        "applied": 0.95,
+        "philosophical": 0.16
+      }
+    },
+    {
+      "source": "neuroscience_cognitive",
+      "source_name": "Neuroscience Cognitive",
+      "source_ring": 1,
+      "target": "caltech_physics",
+      "target_name": "Caltech Physics",
+      "target_ring": 1,
+      "synergy": 0.288125,
+      "face_alignment": {
+        "theoretical": 0.8,
+        "empirical": 0.902,
+        "methodological": 0.64,
+        "historical": 0.2,
+        "applied": 0.665,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "climate_earth_systems",
+      "source_name": "Climate Earth Systems",
+      "source_ring": 1,
+      "target": "harvard_med",
+      "target_name": "Harvard Med",
+      "target_ring": 1,
+      "synergy": 0.2866666666666667,
+      "face_alignment": {
+        "theoretical": 0.7,
+        "empirical": 0.85,
+        "methodological": 0.64,
+        "historical": 0.2,
+        "applied": 0.8,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "princeton_math",
+      "source_name": "Princeton Math",
+      "source_ring": 1,
+      "target": "harvard_med",
+      "target_name": "Harvard Med",
+      "target_ring": 1,
+      "synergy": 0.285,
+      "face_alignment": {
+        "theoretical": 0.7,
+        "empirical": 0.85,
+        "methodological": 0.72,
+        "historical": 0.2,
+        "applied": 0.7,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "harvard_med",
+      "source_name": "Harvard Med",
+      "source_ring": 1,
+      "target": "princeton_math",
+      "target_name": "Princeton Math",
+      "target_ring": 1,
+      "synergy": 0.285,
+      "face_alignment": {
+        "theoretical": 0.7,
+        "empirical": 0.85,
+        "methodological": 0.72,
+        "historical": 0.2,
+        "applied": 0.7,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "oxford_classics",
+      "source_name": "Oxford Classics",
+      "source_ring": 2,
+      "target": "broad_genomics",
+      "target_name": "Broad Genomics",
+      "target_ring": 1,
+      "synergy": 0.285,
+      "face_alignment": {
+        "theoretical": 0.595,
+        "empirical": 0.6,
+        "methodological": 0.56,
+        "historical": 0.5,
+        "applied": 0.665,
+        "philosophical": 0.5
+      }
+    },
+    {
+      "source": "systems_biology",
+      "source_name": "Systems Biology",
+      "source_ring": 1,
+      "target": "princeton_math",
+      "target_name": "Princeton Math",
+      "target_ring": 1,
+      "synergy": 0.28208333333333335,
+      "face_alignment": {
+        "theoretical": 0.7,
+        "empirical": 0.85,
+        "methodological": 0.72,
+        "historical": 0.2,
+        "applied": 0.665,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "bauhaus_design",
+      "source_name": "Bauhaus Design",
+      "source_ring": 3,
+      "target": "indigenous_ecology",
+      "target_name": "Indigenous Ecology",
+      "target_ring": 3,
+      "synergy": 0.2779166666666667,
+      "face_alignment": {
+        "theoretical": 0.42,
+        "empirical": 0.303,
+        "methodological": 0.49,
+        "historical": 0.36,
+        "applied": 0.72,
+        "philosophical": 0.562
+      }
+    },
+    {
+      "source": "indigenous_ecology",
+      "source_name": "Indigenous Ecology",
+      "source_ring": 3,
+      "target": "bauhaus_design",
+      "target_name": "Bauhaus Design",
+      "target_ring": 3,
+      "synergy": 0.2779166666666667,
+      "face_alignment": {
+        "theoretical": 0.42,
+        "empirical": 0.303,
+        "methodological": 0.49,
+        "historical": 0.36,
+        "applied": 0.72,
+        "philosophical": 0.562
+      }
+    },
+    {
+      "source": "longevity_research",
+      "source_name": "Longevity Research",
+      "source_ring": 1,
+      "target": "caltech_physics",
+      "target_name": "Caltech Physics",
+      "target_ring": 1,
+      "synergy": 0.27395833333333336,
+      "face_alignment": {
+        "theoretical": 0.7,
+        "empirical": 0.902,
+        "methodological": 0.64,
+        "historical": 0.2,
+        "applied": 0.595,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "broad_genomics",
+      "source_name": "Broad Genomics",
+      "source_ring": 1,
+      "target": "complexity_science",
+      "target_name": "Complexity Science",
+      "target_ring": 1,
+      "synergy": 0.26958333333333334,
+      "face_alignment": {
+        "theoretical": 0.63,
+        "empirical": 0.85,
+        "methodological": 0.64,
+        "historical": 0.2,
+        "applied": 0.665,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "complexity_science",
+      "source_name": "Complexity Science",
+      "source_ring": 1,
+      "target": "broad_genomics",
+      "target_name": "Broad Genomics",
+      "target_ring": 1,
+      "synergy": 0.26958333333333334,
+      "face_alignment": {
+        "theoretical": 0.63,
+        "empirical": 0.85,
+        "methodological": 0.64,
+        "historical": 0.2,
+        "applied": 0.665,
+        "philosophical": 0.25
+      }
+    },
+    {
+      "source": "yale_law",
+      "source_name": "Yale Law",
+      "source_ring": 2,
+      "target": "harvard_med",
+      "target_name": "Harvard Med",
+      "target_ring": 1,
+      "synergy": 0.26749999999999996,
+      "face_alignment": {
+        "theoretical": 0.525,
+        "empirical": 0.6,
+        "methodological": 0.56,
+        "historical": 0.425,
+        "applied": 0.7,
+        "philosophical": 0.4
+      }
+    },
+    {
+      "source": "stanford_cs",
+      "source_name": "Stanford Cs",
+      "source_ring": 2,
+      "target": "harvard_med",
+      "target_name": "Harvard Med",
+      "target_ring": 1,
+      "synergy": 0.26666666666666666,
+      "face_alignment": {
+        "theoretical": 0.42,
+        "empirical": 0.8,
+        "methodological": 0.68,
+        "historical": 0.15,
+        "applied": 0.95,
+        "philosophical": 0.2
+      }
+    },
+    {
+      "source": "berkeley_psychedelics",
+      "source_name": "Berkeley Psychedelics",
+      "source_ring": 3,
+      "target": "bauhaus_design",
+      "target_name": "Bauhaus Design",
+      "target_ring": 3,
+      "synergy": 0.26625000000000004,
+      "face_alignment": {
+        "theoretical": 0.36,
+        "empirical": 0.303,
+        "methodological": 0.49,
+        "historical": 0.36,
+        "applied": 0.64,
+        "philosophical": 0.562
+      }
+    },
+    {
+      "source": "bauhaus_design",
+      "source_name": "Bauhaus Design",
+      "source_ring": 3,
+      "target": "berkeley_psychedelics",
+      "target_name": "Berkeley Psychedelics",
+      "target_ring": 3,
+      "synergy": 0.26625000000000004,
+      "face_alignment": {
+        "theoretical": 0.36,
+        "empirical": 0.303,
+        "methodological": 0.49,
+        "historical": 0.36,
+        "applied": 0.64,
+        "philosophical": 0.562
+      }
+    },
+    {
+      "source": "chicago_economics",
+      "source_name": "Chicago Economics",
+      "source_ring": 2,
+      "target": "broad_genomics",
+      "target_name": "Broad Genomics",
+      "target_ring": 1,
+      "synergy": 0.26458333333333334,
+      "face_alignment": {
+        "theoretical": 0.525,
+        "empirical": 0.6,
+        "methodological": 0.56,
+        "historical": 0.425,
+        "applied": 0.665,
+        "philosophical": 0.4
+      }
+    },
+    {
+      "source": "princeton_math",
+      "source_name": "Princeton Math",
+      "source_ring": 1,
+      "target": "mensa_orthogonal",
+      "target_name": "Mensa Orthogonal",
+      "target_ring": 0,
+      "synergy": 0.26291666666666663,
+      "face_alignment": {
+        "theoretical": 0.95,
+        "empirical": 0.425,
+        "methodological": 0.675,
+        "historical": 0.28,
+        "applied": 0.35,
+        "philosophical": 0.475
+      }
+    },
+    {
+      "source": "neuroscience_cognitive",
+      "source_name": "Neuroscience Cognitive",
+      "source_ring": 1,
+      "target": "mensa_orthogonal",
+      "target_name": "Mensa Orthogonal",
+      "target_ring": 0,
+      "synergy": 0.26125000000000004,
+      "face_alignment": {
+        "theoretical": 0.76,
+        "empirical": 0.475,
+        "methodological": 0.6,
+        "historical": 0.35,
+        "applied": 0.475,
+        "philosophical": 0.475
+      }
+    },
+    {
+      "source": "mit_engineering",
+      "source_name": "Mit Engineering",
+      "source_ring": 1,
+      "target": "mensa_orthogonal",
+      "target_name": "Mensa Orthogonal",
+      "target_ring": 0,
+      "synergy": 0.26125,
+      "face_alignment": {
+        "theoretical": 0.855,
+        "empirical": 0.425,
+        "methodological": 0.675,
+        "historical": 0.28,
+        "applied": 0.425,
+        "philosophical": 0.475
+      }
+    },
+    {
+      "source": "caltech_physics",
+      "source_name": "Caltech Physics",
+      "source_ring": 1,
+      "target": "mensa_orthogonal",
+      "target_name": "Mensa Orthogonal",
+      "target_ring": 0,
+      "synergy": 0.2608333333333333,
+      "face_alignment": {
+        "theoretical": 0.95,
+        "empirical": 0.475,
+        "methodological": 0.6,
+        "historical": 0.28,
+        "applied": 0.35,
+        "philosophical": 0.475
+      }
+    },
+    {
+      "source": "climate_earth_systems",
+      "source_name": "Climate Earth Systems",
+      "source_ring": 1,
+      "target": "mensa_orthogonal",
+      "target_name": "Mensa Orthogonal",
+      "target_ring": 0,
+      "synergy": 0.2608333333333333,
+      "face_alignment": {
+        "theoretical": 0.95,
+        "empirical": 0.425,
+        "methodological": 0.6,
+        "historical": 0.28,
+        "applied": 0.4,
+        "philosophical": 0.475
+      }
+    },
+    {
+      "source": "longevity_research",
+      "source_name": "Longevity Research",
+      "source_ring": 1,
+      "target": "complexity_science",
+      "target_name": "Complexity Science",
+      "target_ring": 1,
+      "synergy": 0.2602083333333334,
+      "face_alignment": {
+        "theoretical": 0.63,
+        "empirical": 0.807,
+        "methodological": 0.64,
+        "historical": 0.2,
+        "applied": 0.595,
+        "philosophical": 0.25
+      }
+    }
+  ],
+  "optimization_history": [
+    {
+      "iteration": 100,
+      "temperature": 0.6057704364907278,
+      "current_score": 0.28791025641025636,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 200,
+      "temperature": 0.3669578217261671,
+      "current_score": 0.28787377450980384,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 300,
+      "temperature": 0.22229219984074702,
+      "current_score": 0.2877328431372548,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 400,
+      "temperature": 0.1346580429260134,
+      "current_score": 0.28732323232323226,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 500,
+      "temperature": 0.08157186144027828,
+      "current_score": 0.28769278606965165,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 600,
+      "temperature": 0.0494138221100385,
+      "current_score": 0.28884615384615375,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 700,
+      "temperature": 0.029933432588273214,
+      "current_score": 0.2879586834733892,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 800,
+      "temperature": 0.018132788524664028,
+      "current_score": 0.2903273809523809,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 900,
+      "temperature": 0.01098430721937979,
+      "current_score": 0.29020502645502644,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 1000,
+      "temperature": 0.006653968578831948,
+      "current_score": 0.2905711451247165,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 1100,
+      "temperature": 0.004030777450394616,
+      "current_score": 0.2896130952380952,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 1200,
+      "temperature": 0.002441725815522529,
+      "current_score": 0.2877619949494949,
+      "best_score": 0.2911515937019969
+    },
+    {
+      "iteration": 1300,
+      "temperature": 0.0014791253130597608,
+      "current_score": 0.28967592592592595,
+      "best_score": 0.2911515937019969
+    }
+  ],
+  "ring_states": {
+    "0": 0,
+    "1": 5,
+    "2": 4,
+    "3": 0
+  },
+  "total_nodes": 26,
+  "total_rings": 4
+}

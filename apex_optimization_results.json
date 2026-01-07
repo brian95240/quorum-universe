@@ -1,0 +1,1497 @@
+{
+  "timestamp": "2026-01-07T18:02:06.444935",
+  "duration_seconds": 0.0007731914520263672,
+  "optimization_level": "APEX",
+  "injections_applied": 43,
+  "total_injections": 43,
+  "metrics": {
+    "synergy_score": 0,
+    "cascade_potential": 0.8074680497493442,
+    "cache_efficiency": 0.88,
+    "routing_accuracy": 0.92,
+    "tribunal_consensus": 0.94,
+    "resource_efficiency": 0.54463602810366,
+    "total_apex_score": 0.6269572127602349
+  },
+  "injections": [
+    {
+      "id": "intersection_api_server->config",
+      "category": "intersection",
+      "target": "api_server->config",
+      "before_value": "0.5",
+      "after_value": "0.7688513467343773",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444217"
+    },
+    {
+      "id": "intersection_api_server->graph_engine",
+      "category": "intersection",
+      "target": "api_server->graph_engine",
+      "before_value": "0.5",
+      "after_value": "0.7750298270071405",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444220"
+    },
+    {
+      "id": "intersection_api_server->redis_cache_manager",
+      "category": "intersection",
+      "target": "api_server->redis_cache_manager",
+      "before_value": "0.5",
+      "after_value": "0.8035976952426211",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444222"
+    },
+    {
+      "id": "intersection_api_server->synergy_analyzer",
+      "category": "intersection",
+      "target": "api_server->synergy_analyzer",
+      "before_value": "0.5",
+      "after_value": "0.47386050498525817",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444223"
+    },
+    {
+      "id": "intersection_api_server->symbiotic_connector",
+      "category": "intersection",
+      "target": "api_server->symbiotic_connector",
+      "before_value": "0.5",
+      "after_value": "0.6221223582725033",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444225"
+    },
+    {
+      "id": "intersection_graph_engine->config",
+      "category": "intersection",
+      "target": "graph_engine->config",
+      "before_value": "0.5",
+      "after_value": "0.7842997153326279",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444227"
+    },
+    {
+      "id": "intersection_graph_engine->hex_ring_optimizer",
+      "category": "intersection",
+      "target": "graph_engine->hex_ring_optimizer",
+      "before_value": "0.5",
+      "after_value": "0.43677394825868615",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444228"
+    },
+    {
+      "id": "intersection_synergy_analyzer->config",
+      "category": "intersection",
+      "target": "synergy_analyzer->config",
+      "before_value": "0.5",
+      "after_value": "0.03738837550267383",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444235"
+    },
+    {
+      "id": "intersection_synergy_analyzer->graph_engine",
+      "category": "intersection",
+      "target": "synergy_analyzer->graph_engine",
+      "before_value": "0.5",
+      "after_value": "0.6673844658448396",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444237"
+    },
+    {
+      "id": "intersection_synergy_analyzer->hex_ring_optimizer",
+      "category": "intersection",
+      "target": "synergy_analyzer->hex_ring_optimizer",
+      "before_value": "0.5",
+      "after_value": "0.0",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444238"
+    },
+    {
+      "id": "intersection_redis_cache_manager->config",
+      "category": "intersection",
+      "target": "redis_cache_manager->config",
+      "before_value": "0.5",
+      "after_value": "0.585985549727311",
+      "impact_score": 0.8929927748636555,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444240"
+    },
+    {
+      "id": "intersection_redis_cache_manager->symbiotic_connector",
+      "category": "intersection",
+      "target": "redis_cache_manager->symbiotic_connector",
+      "before_value": "0.5",
+      "after_value": "0.43342550233572624",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444241"
+    },
+    {
+      "id": "intersection_symbiotic_connector->config",
+      "category": "intersection",
+      "target": "symbiotic_connector->config",
+      "before_value": "0.5",
+      "after_value": "0.7027128671874507",
+      "impact_score": 0.9513564335937253,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444243"
+    },
+    {
+      "id": "intersection_symbiotic_connector->redis_cache_manager",
+      "category": "intersection",
+      "target": "symbiotic_connector->redis_cache_manager",
+      "before_value": "0.5",
+      "after_value": "0.23315352346916773",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444244"
+    },
+    {
+      "id": "intersection_hex_ring_optimizer->config",
+      "category": "intersection",
+      "target": "hex_ring_optimizer->config",
+      "before_value": "0.5",
+      "after_value": "0.8369654584918529",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444245"
+    },
+    {
+      "id": "intersection_api_server->hex_ring_optimizer",
+      "category": "intersection",
+      "target": "api_server->hex_ring_optimizer",
+      "before_value": "0.5",
+      "after_value": "0.5097961500205206",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444246"
+    },
+    {
+      "id": "intersection_synergy_analyzer->redis_cache_manager",
+      "category": "intersection",
+      "target": "synergy_analyzer->redis_cache_manager",
+      "before_value": "0.5",
+      "after_value": "0.5773695513110776",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444247"
+    },
+    {
+      "id": "cascade_cross_domain_bridge",
+      "category": "cascade",
+      "target": "cross_domain_bridge",
+      "before_value": "1.0",
+      "after_value": "2.0",
+      "impact_score": 0.2,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444287"
+    },
+    {
+      "id": "cascade_hub_api_server",
+      "category": "cascade",
+      "target": "hub_api_server",
+      "before_value": "1.0",
+      "after_value": "2.1",
+      "impact_score": 0.21000000000000002,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444289"
+    },
+    {
+      "id": "cascade_hub_config",
+      "category": "cascade",
+      "target": "hub_config",
+      "before_value": "1.0",
+      "after_value": "2.1",
+      "impact_score": 0.21000000000000002,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444291"
+    },
+    {
+      "id": "cascade_hub_synergy_analyzer",
+      "category": "cascade",
+      "target": "hub_synergy_analyzer",
+      "before_value": "1.0",
+      "after_value": "2.0",
+      "impact_score": 0.2,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444292"
+    },
+    {
+      "id": "cascade_hub_redis_cache_manager",
+      "category": "cascade",
+      "target": "hub_redis_cache_manager",
+      "before_value": "1.0",
+      "after_value": "2.0",
+      "impact_score": 0.2,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444294"
+    },
+    {
+      "id": "cascade_hub_graph_engine",
+      "category": "cascade",
+      "target": "hub_graph_engine",
+      "before_value": "1.0",
+      "after_value": "1.9",
+      "impact_score": 0.19,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444295"
+    },
+    {
+      "id": "cascade_hub_hex_ring_optimizer",
+      "category": "cascade",
+      "target": "hub_hex_ring_optimizer",
+      "before_value": "1.0",
+      "after_value": "1.9",
+      "impact_score": 0.19,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444296"
+    },
+    {
+      "id": "cascade_hub_symbiotic_connector",
+      "category": "cascade",
+      "target": "hub_symbiotic_connector",
+      "before_value": "1.0",
+      "after_value": "1.9",
+      "impact_score": 0.19,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444300"
+    },
+    {
+      "id": "cascade_type_data_flow",
+      "category": "cascade",
+      "target": "type_data_flow",
+      "before_value": "1.0",
+      "after_value": "1.6",
+      "impact_score": 0.16,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444302"
+    },
+    {
+      "id": "cascade_type_module_boundary",
+      "category": "cascade",
+      "target": "type_module_boundary",
+      "before_value": "1.0",
+      "after_value": "1.6",
+      "impact_score": 0.16,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444303"
+    },
+    {
+      "id": "cascade_type_cache_access",
+      "category": "cascade",
+      "target": "type_cache_access",
+      "before_value": "1.0",
+      "after_value": "1.45",
+      "impact_score": 0.145,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444304"
+    },
+    {
+      "id": "cascade_type_tribunal_chain",
+      "category": "cascade",
+      "target": "type_tribunal_chain",
+      "before_value": "1.0",
+      "after_value": "1.3",
+      "impact_score": 0.13,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444305"
+    },
+    {
+      "id": "cascade_chain_1",
+      "category": "cascade",
+      "target": "chain_1",
+      "before_value": "1.0",
+      "after_value": "1.8",
+      "impact_score": 0.18,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444306"
+    },
+    {
+      "id": "cascade_chain_0",
+      "category": "cascade",
+      "target": "chain_0",
+      "before_value": "1.0",
+      "after_value": "1.4",
+      "impact_score": 0.13999999999999999,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444307"
+    },
+    {
+      "id": "cascade_chain_2",
+      "category": "cascade",
+      "target": "chain_2",
+      "before_value": "1.0",
+      "after_value": "1.4",
+      "impact_score": 0.13999999999999999,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444308"
+    },
+    {
+      "id": "cascade_chain_4",
+      "category": "cascade",
+      "target": "chain_4",
+      "before_value": "1.0",
+      "after_value": "1.4",
+      "impact_score": 0.13999999999999999,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444309"
+    },
+    {
+      "id": "cascade_chain_3",
+      "category": "cascade",
+      "target": "chain_3",
+      "before_value": "1.0",
+      "after_value": "1.4",
+      "impact_score": 0.13999999999999999,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444314"
+    },
+    {
+      "id": "routing_table",
+      "category": "routing",
+      "target": "archetype_routing",
+      "before_value": "default_cluster_routing",
+      "after_value": "synergy_optimized_26_archetypes",
+      "impact_score": 0.85,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444455"
+    },
+    {
+      "id": "cache_config",
+      "category": "cache",
+      "target": "multi_tier_cache",
+      "before_value": "default_lru",
+      "after_value": "synergy_optimized_3_tier",
+      "impact_score": 0.9,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444482"
+    },
+    {
+      "id": "tribunal_hume",
+      "category": "tribunal",
+      "target": "validation_rule_hume",
+      "before_value": "none",
+      "after_value": "evidence_validation",
+      "impact_score": 0.15,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444508"
+    },
+    {
+      "id": "tribunal_popper",
+      "category": "tribunal",
+      "target": "validation_rule_popper",
+      "before_value": "none",
+      "after_value": "adversarial_testing",
+      "impact_score": 0.15,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444512"
+    },
+    {
+      "id": "tribunal_quine",
+      "category": "tribunal",
+      "target": "validation_rule_quine",
+      "before_value": "none",
+      "after_value": "holistic_validation",
+      "impact_score": 0.15,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444515"
+    },
+    {
+      "id": "tribunal_arendt",
+      "category": "tribunal",
+      "target": "validation_rule_arendt",
+      "before_value": "none",
+      "after_value": "bias_audit",
+      "impact_score": 0.15,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444517"
+    },
+    {
+      "id": "tribunal_zhuangzi",
+      "category": "tribunal",
+      "target": "validation_rule_zhuangzi",
+      "before_value": "none",
+      "after_value": "peripheral_exploration",
+      "impact_score": 0.15,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444520"
+    },
+    {
+      "id": "tribunal_ibn_khaldun",
+      "category": "tribunal",
+      "target": "validation_rule_ibn_khaldun",
+      "before_value": "none",
+      "after_value": "temporal_tracking",
+      "impact_score": 0.15,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444523"
+    },
+    {
+      "id": "cross_domain_bridges",
+      "category": "bridge",
+      "target": "cross_domain_network",
+      "before_value": "isolated_domains",
+      "after_value": "bridged_9_intersections",
+      "impact_score": 1.0,
+      "applied": true,
+      "timestamp": "2026-01-07T18:02:06.444551"
+    }
+  ],
+  "optimized_config": {
+    "archetypes": {
+      "mit_engineering": {
+        "id": 1,
+        "cluster": "stem_core",
+        "corpus_size_gb": 160,
+        "temperature": 0.7,
+        "style": "Applied, constraint-driven, diagram-first",
+        "domains": [
+          "engineering",
+          "robotics",
+          "systems",
+          "design"
+        ],
+        "training_sources": [
+          "https://ocw.mit.edu/courses/",
+          "https://www.csail.mit.edu/research",
+          "https://www.media.mit.edu/publications/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/mit_engineering/",
+          "embeddings": "/data/embeddings/mit_engineering/",
+          "cache": "/cache/mit_engineering/"
+        },
+        "routing_preferences": [
+          "caltech_physics",
+          "caltech_physics",
+          "robotics_embodied_ai"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "caltech_physics": {
+        "id": 2,
+        "cluster": "stem_core",
+        "corpus_size_gb": 86,
+        "temperature": 0.6,
+        "style": "First-principles, reductionist, intuitive clarity",
+        "domains": [
+          "physics",
+          "cosmology",
+          "quantum",
+          "relativity"
+        ],
+        "training_sources": [
+          "https://www.feynmanlectures.caltech.edu/",
+          "https://arxiv.org/list/physics/recent",
+          "https://www.caltech.edu/research"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/caltech_physics/",
+          "embeddings": "/data/embeddings/caltech_physics/",
+          "cache": "/cache/caltech_physics/"
+        },
+        "routing_preferences": [
+          "mit_engineering",
+          "mit_engineering",
+          "princeton_math"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "princeton_math": {
+        "id": 3,
+        "cluster": "stem_core",
+        "corpus_size_gb": 22,
+        "temperature": 0.65,
+        "style": "Pure abstraction, proof-based, elegant",
+        "domains": [
+          "mathematics",
+          "proof",
+          "analysis",
+          "topology"
+        ],
+        "training_sources": [
+          "https://terrytao.wordpress.com/",
+          "https://www.math.princeton.edu/",
+          "https://arxiv.org/list/math/recent"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/princeton_math/",
+          "embeddings": "/data/embeddings/princeton_math/",
+          "cache": "/cache/princeton_math/"
+        },
+        "routing_preferences": [
+          "caltech_physics",
+          "caltech_physics"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "stanford_cs": {
+        "id": 4,
+        "cluster": "applied_tech",
+        "corpus_size_gb": 18,
+        "temperature": 0.7,
+        "style": "Scalable, code-first, ship-focused",
+        "domains": [
+          "computer_science",
+          "machine_learning",
+          "algorithms"
+        ],
+        "training_sources": [
+          "https://cs229.stanford.edu/",
+          "https://cs231n.stanford.edu/",
+          "https://ai.stanford.edu/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/stanford_cs/",
+          "embeddings": "/data/embeddings/stanford_cs/",
+          "cache": "/cache/stanford_cs/"
+        },
+        "routing_preferences": [
+          "hacker_insurgent",
+          "ai_safety",
+          "robotics_embodied_ai"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "harvard_med": {
+        "id": 5,
+        "cluster": "life_systems",
+        "corpus_size_gb": 65,
+        "temperature": 0.65,
+        "style": "Clinical reasoning, probabilistic, evidence-based",
+        "domains": [
+          "medicine",
+          "clinical",
+          "diagnostics",
+          "physiology"
+        ],
+        "training_sources": [
+          "https://hms.harvard.edu/education",
+          "https://www.nejm.org/",
+          "https://pubmed.ncbi.nlm.nih.gov/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/harvard_med/",
+          "embeddings": "/data/embeddings/harvard_med/",
+          "cache": "/cache/harvard_med/"
+        },
+        "routing_preferences": [
+          "neuroscience_cognitive",
+          "broad_genomics",
+          "broad_genomics"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "yale_law": {
+        "id": 6,
+        "cluster": "human_systems",
+        "corpus_size_gb": 42,
+        "temperature": 0.65,
+        "style": "Adversarial, precedent-heavy, distinguish-or-concede",
+        "domains": [
+          "law",
+          "policy",
+          "rights",
+          "precedent"
+        ],
+        "training_sources": [
+          "https://law.yale.edu/",
+          "https://www.supremecourt.gov/opinions/",
+          "https://www.law.cornell.edu/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/yale_law/",
+          "embeddings": "/data/embeddings/yale_law/",
+          "cache": "/cache/yale_law/"
+        },
+        "routing_preferences": [
+          "oxford_classics",
+          "oxford_classics"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "oxford_classics": {
+        "id": 7,
+        "cluster": "human_systems",
+        "corpus_size_gb": 35,
+        "temperature": 0.75,
+        "style": "Dialectical, narrative, historiographic",
+        "domains": [
+          "classics",
+          "philosophy",
+          "history",
+          "literature"
+        ],
+        "training_sources": [
+          "https://www.perseus.tufts.edu/",
+          "https://plato.stanford.edu/",
+          "https://www.classics.ox.ac.uk/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/oxford_classics/",
+          "embeddings": "/data/embeddings/oxford_classics/",
+          "cache": "/cache/oxford_classics/"
+        },
+        "routing_preferences": [
+          "yale_law",
+          "yale_law",
+          "chicago_economics"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "mensa_orthogonal": {
+        "id": 8,
+        "cluster": "meta_cognitive",
+        "corpus_size_gb": 4,
+        "temperature": 0.9,
+        "style": "Non-linear, pattern-seeking, assume-nothing",
+        "domains": [
+          "puzzles",
+          "patterns",
+          "lateral_thinking"
+        ],
+        "training_sources": [
+          "https://www.mensa.org/",
+          "https://www.worldpuzzle.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/mensa_orthogonal/",
+          "embeddings": "/data/embeddings/mensa_orthogonal/",
+          "cache": "/cache/mensa_orthogonal/"
+        },
+        "routing_preferences": [
+          "philosophy_tribunal"
+        ],
+        "cache_tier": "l3_cold",
+        "cascade_membership": []
+      },
+      "beijing_classical": {
+        "id": 9,
+        "cluster": "non_western",
+        "corpus_size_gb": 8,
+        "temperature": 0.75,
+        "style": "Strategic, paradoxical, harmony-seeking",
+        "domains": [
+          "strategy",
+          "eastern_philosophy",
+          "traditional_medicine"
+        ],
+        "training_sources": [
+          "https://ctext.org/",
+          "https://www.sacred-texts.com/tao/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/beijing_classical/",
+          "embeddings": "/data/embeddings/beijing_classical/",
+          "cache": "/cache/beijing_classical/"
+        },
+        "routing_preferences": [
+          "baghdad_golden",
+          "baghdad_golden"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "baghdad_golden": {
+        "id": 10,
+        "cluster": "non_western",
+        "corpus_size_gb": 12,
+        "temperature": 0.7,
+        "style": "Empirical, geometric, spiritual-rational synthesis",
+        "domains": [
+          "islamic_science",
+          "mathematics",
+          "optics",
+          "medicine"
+        ],
+        "training_sources": [
+          "https://www.muslimheritage.com/",
+          "https://www.islamicmanuscripts.info/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/baghdad_golden/",
+          "embeddings": "/data/embeddings/baghdad_golden/",
+          "cache": "/cache/baghdad_golden/"
+        },
+        "routing_preferences": [
+          "beijing_classical",
+          "beijing_classical",
+          "nalanda_vedic"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "nalanda_vedic": {
+        "id": 11,
+        "cluster": "non_western",
+        "corpus_size_gb": 6,
+        "temperature": 0.72,
+        "style": "Intuitive-deductive, infinity-aware, holistic",
+        "domains": [
+          "indian_mathematics",
+          "ayurveda",
+          "logic",
+          "consciousness"
+        ],
+        "training_sources": [
+          "https://www.sacred-texts.com/hin/",
+          "https://www.wisdomlib.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/nalanda_vedic/",
+          "embeddings": "/data/embeddings/nalanda_vedic/",
+          "cache": "/cache/nalanda_vedic/"
+        },
+        "routing_preferences": [
+          "baghdad_golden",
+          "baghdad_golden"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "broad_genomics": {
+        "id": 12,
+        "cluster": "life_systems",
+        "corpus_size_gb": 120,
+        "temperature": 0.7,
+        "style": "Data-driven, evolutionary, systems biology",
+        "domains": [
+          "genomics",
+          "evolution",
+          "molecular_biology",
+          "genetics"
+        ],
+        "training_sources": [
+          "https://www.broadinstitute.org/",
+          "https://www.biorxiv.org/",
+          "https://www.ncbi.nlm.nih.gov/pmc/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/broad_genomics/",
+          "embeddings": "/data/embeddings/broad_genomics/",
+          "cache": "/cache/broad_genomics/"
+        },
+        "routing_preferences": [
+          "harvard_med",
+          "harvard_med",
+          "systems_biology"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "berkeley_psychedelics": {
+        "id": 13,
+        "cluster": "creative_synthesis",
+        "corpus_size_gb": 8,
+        "temperature": 0.85,
+        "style": "Experiential, non-ordinary states, phenomenological",
+        "domains": [
+          "consciousness",
+          "psychedelics",
+          "phenomenology"
+        ],
+        "training_sources": [
+          "https://maps.org/research/",
+          "https://hopkinspsychedelic.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/berkeley_psychedelics/",
+          "embeddings": "/data/embeddings/berkeley_psychedelics/",
+          "cache": "/cache/berkeley_psychedelics/"
+        },
+        "routing_preferences": [
+          "bauhaus_design",
+          "indigenous_ecology"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "chicago_economics": {
+        "id": 14,
+        "cluster": "human_systems",
+        "corpus_size_gb": 28,
+        "temperature": 0.7,
+        "style": "Incentive-focused, market-based, rational-choice",
+        "domains": [
+          "economics",
+          "incentives",
+          "markets",
+          "behavior"
+        ],
+        "training_sources": [
+          "https://www.nber.org/",
+          "https://www.econlib.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/chicago_economics/",
+          "embeddings": "/data/embeddings/chicago_economics/",
+          "cache": "/cache/chicago_economics/"
+        },
+        "routing_preferences": [
+          "oxford_classics",
+          "oxford_classics"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "bauhaus_design": {
+        "id": 15,
+        "cluster": "creative_synthesis",
+        "corpus_size_gb": 5,
+        "temperature": 0.8,
+        "style": "Form-follows-function, gestalt, minimalist",
+        "domains": [
+          "design",
+          "architecture",
+          "aesthetics",
+          "systems_thinking"
+        ],
+        "training_sources": [
+          "https://www.bauhaus.de/",
+          "https://www.risd.edu/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/bauhaus_design/",
+          "embeddings": "/data/embeddings/bauhaus_design/",
+          "cache": "/cache/bauhaus_design/"
+        },
+        "routing_preferences": [
+          "berkeley_psychedelics",
+          "indigenous_ecology"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "hacker_insurgent": {
+        "id": 16,
+        "cluster": "applied_tech",
+        "corpus_size_gb": 3,
+        "temperature": 0.8,
+        "style": "Lateral, exploit-seeking, anti-authoritarian",
+        "domains": [
+          "hacking",
+          "security",
+          "foss",
+          "freedom"
+        ],
+        "training_sources": [
+          "https://www.gnu.org/",
+          "http://phrack.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/hacker_insurgent/",
+          "embeddings": "/data/embeddings/hacker_insurgent/",
+          "cache": "/cache/hacker_insurgent/"
+        },
+        "routing_preferences": [
+          "stanford_cs",
+          "ai_safety",
+          "robotics_embodied_ai"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "indigenous_ecology": {
+        "id": 17,
+        "cluster": "creative_synthesis",
+        "corpus_size_gb": 4,
+        "temperature": 0.75,
+        "style": "Holistic, multi-generational, reciprocal",
+        "domains": [
+          "ecology",
+          "traditional_knowledge",
+          "sustainability"
+        ],
+        "training_sources": [
+          "https://www.permaculturenews.org/",
+          "https://biomimicry.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/indigenous_ecology/",
+          "embeddings": "/data/embeddings/indigenous_ecology/",
+          "cache": "/cache/indigenous_ecology/"
+        },
+        "routing_preferences": [
+          "berkeley_psychedelics",
+          "bauhaus_design"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "complexity_science": {
+        "id": 18,
+        "cluster": "stem_core",
+        "corpus_size_gb": 15,
+        "temperature": 0.75,
+        "style": "Systems-level, non-linear, emergent properties",
+        "domains": [
+          "complexity",
+          "emergence",
+          "networks",
+          "chaos"
+        ],
+        "training_sources": [
+          "https://www.santafe.edu/",
+          "https://arxiv.org/list/nlin/recent"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/complexity_science/",
+          "embeddings": "/data/embeddings/complexity_science/",
+          "cache": "/cache/complexity_science/"
+        },
+        "routing_preferences": [
+          "mit_engineering",
+          "mit_engineering"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "ai_safety": {
+        "id": 19,
+        "cluster": "applied_tech",
+        "corpus_size_gb": 8,
+        "temperature": 0.65,
+        "style": "Cautious, long-term, adversarial-robust",
+        "domains": [
+          "ai_safety",
+          "alignment",
+          "x-risk",
+          "ethics"
+        ],
+        "training_sources": [
+          "https://www.anthropic.com/research",
+          "https://www.alignmentforum.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/ai_safety/",
+          "embeddings": "/data/embeddings/ai_safety/",
+          "cache": "/cache/ai_safety/"
+        },
+        "routing_preferences": [
+          "stanford_cs",
+          "hacker_insurgent",
+          "robotics_embodied_ai"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "longevity_research": {
+        "id": 20,
+        "cluster": "life_systems",
+        "corpus_size_gb": 12,
+        "temperature": 0.7,
+        "style": "Interventionist, damage-repair, optimistic",
+        "domains": [
+          "longevity",
+          "aging",
+          "regeneration",
+          "biomarkers"
+        ],
+        "training_sources": [
+          "https://www.sens.org/",
+          "https://www.lifespan.io/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/longevity_research/",
+          "embeddings": "/data/embeddings/longevity_research/",
+          "cache": "/cache/longevity_research/"
+        },
+        "routing_preferences": [
+          "harvard_med",
+          "broad_genomics",
+          "neuroscience_cognitive"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "quantum_computing": {
+        "id": 21,
+        "cluster": "stem_core",
+        "corpus_size_gb": 10,
+        "temperature": 0.68,
+        "style": "Superposition-aware, entanglement-first, probabilistic",
+        "domains": [
+          "quantum_computing",
+          "qubits",
+          "quantum_algorithms",
+          "cryptography"
+        ],
+        "training_sources": [
+          "https://arxiv.org/list/quant-ph/recent",
+          "https://quantum.ibm.com/",
+          "https://ai.googleblog.com/search/label/Quantum"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/quantum_computing/",
+          "embeddings": "/data/embeddings/quantum_computing/",
+          "cache": "/cache/quantum_computing/"
+        },
+        "routing_preferences": [
+          "mit_engineering"
+        ],
+        "cache_tier": "l2_warm",
+        "cascade_membership": []
+      },
+      "neuroscience_cognitive": {
+        "id": 22,
+        "cluster": "life_systems",
+        "corpus_size_gb": 45,
+        "temperature": 0.72,
+        "style": "Neural-network aware, plasticity-focused, embodied cognition",
+        "domains": [
+          "neuroscience",
+          "cognitive_science",
+          "brain_mapping",
+          "consciousness"
+        ],
+        "training_sources": [
+          "https://www.jneurosci.org/",
+          "https://www.nature.com/neuro/",
+          "https://www.cognitivesciencesociety.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/neuroscience_cognitive/",
+          "embeddings": "/data/embeddings/neuroscience_cognitive/",
+          "cache": "/cache/neuroscience_cognitive/"
+        },
+        "routing_preferences": [
+          "harvard_med"
+        ],
+        "cache_tier": "l2_warm",
+        "cascade_membership": []
+      },
+      "systems_biology": {
+        "id": 23,
+        "cluster": "life_systems",
+        "corpus_size_gb": 35,
+        "temperature": 0.7,
+        "style": "Holistic, network-centric, multi-scale integration",
+        "domains": [
+          "systems_biology",
+          "metabolomics",
+          "proteomics",
+          "bioinformatics"
+        ],
+        "training_sources": [
+          "https://www.systemsbiology.org/",
+          "https://www.ebi.ac.uk/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/systems_biology/",
+          "embeddings": "/data/embeddings/systems_biology/",
+          "cache": "/cache/systems_biology/"
+        },
+        "routing_preferences": [
+          "broad_genomics"
+        ],
+        "cache_tier": "l2_warm",
+        "cascade_membership": []
+      },
+      "climate_earth_systems": {
+        "id": 24,
+        "cluster": "stem_core",
+        "corpus_size_gb": 50,
+        "temperature": 0.7,
+        "style": "Planetary-scale, feedback-loop aware, long-horizon",
+        "domains": [
+          "climate_science",
+          "earth_systems",
+          "sustainability",
+          "ecology"
+        ],
+        "training_sources": [
+          "https://www.ipcc.ch/",
+          "https://climate.nasa.gov/",
+          "https://www.nature.com/nclimate/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/climate_earth_systems/",
+          "embeddings": "/data/embeddings/climate_earth_systems/",
+          "cache": "/cache/climate_earth_systems/"
+        },
+        "routing_preferences": [
+          "mit_engineering",
+          "caltech_physics",
+          "princeton_math"
+        ],
+        "cache_tier": "l1_hot",
+        "cascade_membership": []
+      },
+      "robotics_embodied_ai": {
+        "id": 25,
+        "cluster": "applied_tech",
+        "corpus_size_gb": 25,
+        "temperature": 0.72,
+        "style": "Sensor-fusion, real-time, physical-world grounded",
+        "domains": [
+          "robotics",
+          "embodied_ai",
+          "control_systems",
+          "perception"
+        ],
+        "training_sources": [
+          "https://www.ieee-ras.org/",
+          "https://robotics.sciencemag.org/",
+          "https://www.ros.org/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/robotics_embodied_ai/",
+          "embeddings": "/data/embeddings/robotics_embodied_ai/",
+          "cache": "/cache/robotics_embodied_ai/"
+        },
+        "routing_preferences": [
+          "mit_engineering"
+        ],
+        "cache_tier": "l2_warm",
+        "cascade_membership": []
+      },
+      "philosophy_tribunal": {
+        "id": 26,
+        "cluster": "meta_cognitive",
+        "corpus_size_gb": 20,
+        "temperature": 0.78,
+        "style": "Dialectical, multi-perspective, truth-seeking tribunal",
+        "domains": [
+          "epistemology",
+          "ethics",
+          "logic",
+          "metaphysics"
+        ],
+        "training_sources": [
+          "https://plato.stanford.edu/",
+          "https://philpapers.org/",
+          "https://www.iep.utm.edu/"
+        ],
+        "data_dump_paths": {
+          "primary": "/data/archetypes/philosophy_tribunal/",
+          "embeddings": "/data/embeddings/philosophy_tribunal/",
+          "cache": "/cache/philosophy_tribunal/"
+        },
+        "routing_preferences": [
+          "mensa_orthogonal"
+        ],
+        "cache_tier": "l3_cold",
+        "cascade_membership": []
+      }
+    },
+    "routing": {
+      "mit_engineering": [
+        "caltech_physics",
+        "caltech_physics",
+        "robotics_embodied_ai"
+      ],
+      "caltech_physics": [
+        "mit_engineering",
+        "mit_engineering",
+        "princeton_math"
+      ],
+      "princeton_math": [
+        "caltech_physics",
+        "caltech_physics"
+      ],
+      "stanford_cs": [
+        "hacker_insurgent",
+        "ai_safety",
+        "robotics_embodied_ai"
+      ],
+      "harvard_med": [
+        "neuroscience_cognitive",
+        "broad_genomics",
+        "broad_genomics"
+      ],
+      "yale_law": [
+        "oxford_classics",
+        "oxford_classics"
+      ],
+      "oxford_classics": [
+        "yale_law",
+        "yale_law",
+        "chicago_economics"
+      ],
+      "mensa_orthogonal": [
+        "philosophy_tribunal"
+      ],
+      "beijing_classical": [
+        "baghdad_golden",
+        "baghdad_golden"
+      ],
+      "baghdad_golden": [
+        "beijing_classical",
+        "beijing_classical",
+        "nalanda_vedic"
+      ],
+      "nalanda_vedic": [
+        "baghdad_golden",
+        "baghdad_golden"
+      ],
+      "broad_genomics": [
+        "harvard_med",
+        "harvard_med",
+        "systems_biology"
+      ],
+      "berkeley_psychedelics": [
+        "bauhaus_design",
+        "indigenous_ecology"
+      ],
+      "chicago_economics": [
+        "oxford_classics",
+        "oxford_classics"
+      ],
+      "bauhaus_design": [
+        "berkeley_psychedelics",
+        "indigenous_ecology"
+      ],
+      "hacker_insurgent": [
+        "stanford_cs",
+        "ai_safety",
+        "robotics_embodied_ai"
+      ],
+      "indigenous_ecology": [
+        "berkeley_psychedelics",
+        "bauhaus_design"
+      ],
+      "complexity_science": [
+        "mit_engineering",
+        "mit_engineering"
+      ],
+      "ai_safety": [
+        "stanford_cs",
+        "hacker_insurgent",
+        "robotics_embodied_ai"
+      ],
+      "longevity_research": [
+        "harvard_med",
+        "broad_genomics",
+        "neuroscience_cognitive"
+      ],
+      "quantum_computing": [
+        "mit_engineering"
+      ],
+      "neuroscience_cognitive": [
+        "harvard_med"
+      ],
+      "systems_biology": [
+        "broad_genomics"
+      ],
+      "climate_earth_systems": [
+        "mit_engineering",
+        "caltech_physics",
+        "princeton_math"
+      ],
+      "robotics_embodied_ai": [
+        "mit_engineering"
+      ],
+      "philosophy_tribunal": [
+        "mensa_orthogonal"
+      ]
+    },
+    "cache": {
+      "l1_hot": {
+        "size_mb": 256,
+        "ttl_seconds": 300,
+        "prewarm_pairs": [
+          [
+            "beijing_classical",
+            "baghdad_golden"
+          ],
+          [
+            "baghdad_golden",
+            "beijing_classical"
+          ],
+          [
+            "baghdad_golden",
+            "nalanda_vedic"
+          ],
+          [
+            "nalanda_vedic",
+            "baghdad_golden"
+          ],
+          [
+            "yale_law",
+            "oxford_classics"
+          ]
+        ],
+        "compression": null
+      },
+      "l2_warm": {
+        "size_mb": 2048,
+        "ttl_seconds": 3600,
+        "prewarm_pairs": [
+          [
+            "oxford_classics",
+            "yale_law"
+          ],
+          [
+            "oxford_classics",
+            "chicago_economics"
+          ],
+          [
+            "chicago_economics",
+            "oxford_classics"
+          ],
+          [
+            "neuroscience_cognitive",
+            "harvard_med"
+          ],
+          [
+            "harvard_med",
+            "broad_genomics"
+          ],
+          [
+            "broad_genomics",
+            "harvard_med"
+          ],
+          [
+            "systems_biology",
+            "broad_genomics"
+          ],
+          [
+            "mit_engineering",
+            "caltech_physics"
+          ],
+          [
+            "caltech_physics",
+            "mit_engineering"
+          ],
+          [
+            "caltech_physics",
+            "princeton_math"
+          ]
+        ],
+        "compression": "zstd-3"
+      },
+      "l3_cold": {
+        "size_mb": 16384,
+        "ttl_seconds": 86400,
+        "prewarm_pairs": [
+          [
+            "princeton_math",
+            "caltech_physics"
+          ],
+          [
+            "robotics_embodied_ai",
+            "mit_engineering"
+          ],
+          [
+            "mit_engineering",
+            "complexity_science"
+          ],
+          [
+            "complexity_science",
+            "mit_engineering"
+          ],
+          [
+            "quantum_computing",
+            "mit_engineering"
+          ]
+        ],
+        "compression": "zstd-19"
+      },
+      "predictive_loading": true,
+      "synergy_based_eviction": true
+    },
+    "cascade_chains": [
+      [
+        "cross_domain_bridge",
+        "hub_api_server",
+        "hub_config",
+        "hub_synergy_analyzer",
+        "hub_redis_cache_manager",
+        "hub_graph_engine",
+        "hub_hex_ring_optimizer",
+        "hub_symbiotic_connector",
+        "type_data_flow",
+        "type_module_boundary",
+        "type_cache_access",
+        "type_tribunal_chain",
+        "chain_1",
+        "chain_0",
+        "chain_2",
+        "chain_4",
+        "chain_3"
+      ]
+    ]
+  },
+  "log": [
+    {
+      "timestamp": "2026-01-07T18:02:06.444161",
+      "level": "info",
+      "message": "Injected 0 ring rotations"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444191",
+      "level": "info",
+      "message": "Identified 0 high-synergy pairs"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444254",
+      "level": "info",
+      "message": "Injected 17 intersection weights"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444272",
+      "level": "info",
+      "message": "Annealing energy: 0.9908"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444316",
+      "level": "info",
+      "message": "Activated 17 cascade steps"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444349",
+      "level": "info",
+      "message": "Total cascade potential: 8075x"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444457",
+      "level": "info",
+      "message": "Optimized routing for 26 archetypes"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444485",
+      "level": "info",
+      "message": "Configured 20 pre-warm pairs across 3 tiers"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444524",
+      "level": "info",
+      "message": "Injected 6 tribunal validation rules"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444553",
+      "level": "info",
+      "message": "Applied 9 cross-domain bridges"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444562",
+      "level": "info",
+      "message": "Bridge cascade multiplier: 2.00x"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444880",
+      "level": "info",
+      "message": "Finalized 26 archetype configurations"
+    },
+    {
+      "timestamp": "2026-01-07T18:02:06.444908",
+      "level": "info",
+      "message": "Resource efficiency: 54.46%"
+    }
+  ]
+}

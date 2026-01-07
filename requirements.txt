@@ -1,0 +1,35 @@
+# Quorum Universe - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core async and web framework
+asyncpg>=0.29.0
+fastapi>=0.109.0
+uvicorn>=0.25.0
+pydantic>=2.5.0
+
+# Graph and data processing
+networkx>=3.2.1
+numpy>=1.26.0
+
+# Database and caching
+redis>=5.0.0
+psycopg2-binary>=2.9.9
+
+# Compression
+zstandard>=0.22.0
+
+# HTTP client
+aiohttp>=3.9.0
+httpx>=0.26.0
+
+# Utilities
+python-dotenv>=1.0.0
+python-multipart>=0.0.6
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+
+# Type checking (optional)
+mypy>=1.8.0
+types-redis>=4.6.0
