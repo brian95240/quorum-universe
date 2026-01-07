@@ -1,0 +1,306 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* 
+ * DESIGN PHILOSOPHY: Neural Network Interface (Biopunk/Organic Tech)
+ * - Living systems - UI feels alive, breathing, connected
+ * - Synaptic connections - relationships visualized as neural pathways
+ * - Organic geometry - soft curves, branching structures
+ * - Information flow - data moves like electrical impulses
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Neural Network Custom Colors */
+  --color-neural-cyan: oklch(0.85 0.15 195);
+  --color-neural-coral: oklch(0.7 0.18 25);
+  --color-neural-sage: oklch(0.6 0.08 150);
+  --color-neural-glow: oklch(0.9 0.2 195);
+}
+
+:root {
+  /* Neural Network Interface - Dark Theme as Default */
+  --radius: 1rem;
+  
+  /* Deep teal background */
+  --background: oklch(0.12 0.03 195);
+  --foreground: oklch(0.95 0.01 195);
+  
+  /* Card with cell-membrane effect */
+  --card: oklch(0.15 0.035 195);
+  --card-foreground: oklch(0.95 0.01 195);
+  
+  --popover: oklch(0.13 0.03 195);
+  --popover-foreground: oklch(0.95 0.01 195);
+  
+  /* Bioluminescent cyan primary */
+  --primary: oklch(0.75 0.18 195);
+  --primary-foreground: oklch(0.1 0.02 195);
+  
+  /* Muted sage secondary */
+  --secondary: oklch(0.25 0.04 195);
+  --secondary-foreground: oklch(0.85 0.05 195);
+  
+  --muted: oklch(0.2 0.025 195);
+  --muted-foreground: oklch(0.65 0.04 195);
+  
+  /* Coral accent for alerts/philosophers */
+  --accent: oklch(0.65 0.15 25);
+  --accent-foreground: oklch(0.98 0.01 25);
+  
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.98 0.01 0);
+  
+  --border: oklch(0.25 0.04 195);
+  --input: oklch(0.2 0.03 195);
+  --ring: oklch(0.75 0.18 195);
+  
+  /* Chart colors - neural pathway spectrum */
+  --chart-1: oklch(0.75 0.18 195);
+  --chart-2: oklch(0.65 0.15 25);
+  --chart-3: oklch(0.6 0.12 150);
+  --chart-4: oklch(0.7 0.14 280);
+  --chart-5: oklch(0.65 0.16 60);
+  
+  /* Sidebar - dendrite navigation */
+  --sidebar: oklch(0.1 0.025 195);
+  --sidebar-foreground: oklch(0.9 0.02 195);
+  --sidebar-primary: oklch(0.75 0.18 195);
+  --sidebar-primary-foreground: oklch(0.1 0.02 195);
+  --sidebar-accent: oklch(0.2 0.035 195);
+  --sidebar-accent-foreground: oklch(0.95 0.01 195);
+  --sidebar-border: oklch(0.22 0.035 195);
+  --sidebar-ring: oklch(0.75 0.18 195);
+}
+
+.dark {
+  /* Same as root - dark is default for neural interface */
+  --background: oklch(0.12 0.03 195);
+  --foreground: oklch(0.95 0.01 195);
+  --card: oklch(0.15 0.035 195);
+  --card-foreground: oklch(0.95 0.01 195);
+  --popover: oklch(0.13 0.03 195);
+  --popover-foreground: oklch(0.95 0.01 195);
+  --primary: oklch(0.75 0.18 195);
+  --primary-foreground: oklch(0.1 0.02 195);
+  --secondary: oklch(0.25 0.04 195);
+  --secondary-foreground: oklch(0.85 0.05 195);
+  --muted: oklch(0.2 0.025 195);
+  --muted-foreground: oklch(0.65 0.04 195);
+  --accent: oklch(0.65 0.15 25);
+  --accent-foreground: oklch(0.98 0.01 25);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.98 0.01 0);
+  --border: oklch(0.25 0.04 195);
+  --input: oklch(0.2 0.03 195);
+  --ring: oklch(0.75 0.18 195);
+  --chart-1: oklch(0.75 0.18 195);
+  --chart-2: oklch(0.65 0.15 25);
+  --chart-3: oklch(0.6 0.12 150);
+  --chart-4: oklch(0.7 0.14 280);
+  --chart-5: oklch(0.65 0.16 60);
+  --sidebar: oklch(0.1 0.025 195);
+  --sidebar-foreground: oklch(0.9 0.02 195);
+  --sidebar-primary: oklch(0.75 0.18 195);
+  --sidebar-primary-foreground: oklch(0.1 0.02 195);
+  --sidebar-accent: oklch(0.2 0.035 195);
+  --sidebar-accent-foreground: oklch(0.95 0.01 195);
+  --sidebar-border: oklch(0.22 0.035 195);
+  --sidebar-ring: oklch(0.75 0.18 195);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1400px;
+    }
+  }
+  
+  /* Neural Network Custom Components */
+  
+  /* Cell membrane card effect */
+  .neural-card {
+    @apply relative rounded-2xl overflow-hidden;
+    background: linear-gradient(
+      135deg,
+      oklch(0.15 0.035 195 / 0.9),
+      oklch(0.12 0.03 195 / 0.95)
+    );
+    border: 1px solid oklch(0.3 0.06 195 / 0.3);
+    box-shadow: 
+      0 0 20px oklch(0.75 0.18 195 / 0.1),
+      inset 0 1px 0 oklch(1 0 0 / 0.05);
+  }
+  
+  .neural-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at 30% 20%,
+      oklch(0.75 0.18 195 / 0.08),
+      transparent 50%
+    );
+    pointer-events: none;
+  }
+  
+  /* Glowing border effect */
+  .neural-glow {
+    box-shadow: 
+      0 0 15px oklch(0.75 0.18 195 / 0.3),
+      0 0 30px oklch(0.75 0.18 195 / 0.15),
+      0 0 45px oklch(0.75 0.18 195 / 0.05);
+  }
+  
+  /* Pulsing animation */
+  .neural-pulse {
+    animation: neural-pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes neural-pulse {
+    0%, 100% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+  }
+  
+  /* Synaptic connection line */
+  .synapse-line {
+    stroke: oklch(0.75 0.18 195);
+    stroke-width: 2;
+    fill: none;
+    filter: drop-shadow(0 0 4px oklch(0.75 0.18 195 / 0.5));
+  }
+  
+  /* Breathing background animation */
+  .neural-breathe {
+    animation: breathe 6s ease-in-out infinite;
+  }
+  
+  @keyframes breathe {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Philosopher colors */
+  .philosopher-hume { color: oklch(0.7 0.15 240); }
+  .philosopher-popper { color: oklch(0.7 0.18 150); }
+  .philosopher-quine { color: oklch(0.75 0.18 195); }
+  .philosopher-arendt { color: oklch(0.7 0.18 25); }
+  .philosopher-zhuangzi { color: oklch(0.75 0.15 85); }
+  .philosopher-khaldun { color: oklch(0.7 0.15 55); }
+  
+  /* Cluster type badges */
+  .cluster-stem { background: oklch(0.75 0.18 195 / 0.2); border-color: oklch(0.75 0.18 195); }
+  .cluster-life { background: oklch(0.7 0.18 150 / 0.2); border-color: oklch(0.7 0.18 150); }
+  .cluster-human { background: oklch(0.7 0.15 55 / 0.2); border-color: oklch(0.7 0.15 55); }
+  .cluster-meta { background: oklch(0.7 0.14 280 / 0.2); border-color: oklch(0.7 0.14 280); }
+}
+
+@layer utilities {
+  /* Text glow effect */
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  /* Gradient text */
+  .text-gradient-neural {
+    background: linear-gradient(135deg, oklch(0.75 0.18 195), oklch(0.65 0.15 25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
