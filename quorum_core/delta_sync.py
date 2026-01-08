@@ -55,6 +55,18 @@ try:
 except ImportError:
     ZSTD_AVAILABLE = False
 
+# Import compression manager for delta compression
+try:
+    import sys
+    source_code_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'Source Code')
+    if source_code_path not in sys.path:
+        sys.path.insert(0, source_code_path)
+    from compression_manager import CompressionManager, CompressionStats
+    COMPRESSION_MANAGER_AVAILABLE = True
+except ImportError as e:
+    print(f"WARNING: CompressionManager unavailable: {e}")
+    COMPRESSION_MANAGER_AVAILABLE = False
+
 
 # =============================================================================
 # CONFIGURATION
@@ -135,6 +147,9 @@ class SyncResult:
     success: bool
     deltas_applied: int = 0
     bytes_downloaded: int = 0
+    bytes_before_compression: int = 0
+    bytes_after_compression: int = 0
+    compression_ratio: float = 0.0
     files_updated: int = 0
     graph_updates: int = 0
     errors: List[str] = field(default_factory=list)
@@ -146,6 +161,10 @@ class SyncResult:
             'success': self.success,
             'deltas_applied': self.deltas_applied,
             'bytes_downloaded': self.bytes_downloaded,
+            'bytes_before_compression': self.bytes_before_compression,
+            'bytes_after_compression': self.bytes_after_compression,
+            'compression_ratio': f"{self.compression_ratio:.1%}" if self.compression_ratio > 0 else "N/A",
+            'bandwidth_saved': self.bytes_before_compression - self.bytes_after_compression,
             'files_updated': self.files_updated,
             'graph_updates': self.graph_updates,
             'errors': self.errors,
@@ -189,6 +208,14 @@ class DeltaSyncDaemon:
             self.cache = MultiTierCache()
         else:
             self.cache = None
+        
+        # Compression manager integration
+        if COMPRESSION_MANAGER_AVAILABLE:
+            self.compressor = CompressionManager(level=CompressionManager.LEVEL_MAX)
+            print(f"  Compression: enabled (Zstd level {CompressionManager.LEVEL_MAX})")
+        else:
+            self.compressor = None
+            print(f"  Compression: disabled")
         
         print(f"DeltaSyncDaemon initialized")
         print(f"  Interval: {self.config.interval.value}")
@@ -533,6 +560,226 @@ class DeltaSyncDaemon:
             print(f"ERROR: SQL execution failed: {e}")
             return 0
     
+    # =========================================================================
+    # COMPRESSION FOR COMMITS
+    # =========================================================================
+    
+    def compress_delta_content(self, content: bytes, content_type: str = 'data') -> Tuple[bytes, Dict]:
+        """
+        Compress delta content before commit to repository.
+        
+        Uses CompressionManager for 70-80% bandwidth reduction.
+        
+        Args:
+            content: Raw content bytes
+            content_type: Type of content ('data', 'sql', 'embedding', 'json')
+        
+        Returns:
+            Tuple of (compressed_bytes, compression_stats)
+        """
+        stats = {
+            'original_size': len(content),
+            'compressed_size': len(content),
+            'ratio': 1.0,
+            'savings_bytes': 0,
+            'savings_percent': 0.0,
+        }
+        
+        if not self.compressor:
+            print("  Compression: skipped (manager unavailable)")
+            return content, stats
+        
+        try:
+            if content_type in ('json', 'sql', 'data'):
+                # Text-based content
+                text = content.decode('utf-8') if isinstance(content, bytes) else content
+                compressed = self.compressor.compress_text(text)
+            else:
+                # Binary content - use raw compression
+                compressed = self.compressor.compressor.compress(content)
+            
+            stats['compressed_size'] = len(compressed)
+            stats['ratio'] = len(compressed) / len(content) if len(content) > 0 else 1.0
+            stats['savings_bytes'] = len(content) - len(compressed)
+            stats['savings_percent'] = (1 - stats['ratio']) * 100
+            
+            print(f"  Compressed: {len(content):,} → {len(compressed):,} bytes ({stats['ratio']:.1%})")
+            
+            return compressed, stats
+            
+        except Exception as e:
+            print(f"  Compression failed: {e}")
+            return content, stats
+    
+    def compress_file_for_commit(self, input_path: Path, output_path: Optional[Path] = None) -> Tuple[Path, Dict]:
+        """
+        Compress a file for commit to delta repository.
+        
+        Args:
+            input_path: Source file path
+            output_path: Destination path (defaults to input_path + '.zst')
+        
+        Returns:
+            Tuple of (output_path, compression_stats)
+        """
+        if output_path is None:
+            output_path = input_path.with_suffix(input_path.suffix + '.zst')
+        
+        stats = {
+            'original_size': input_path.stat().st_size,
+            'compressed_size': 0,
+            'ratio': 1.0,
+            'savings_bytes': 0,
+            'savings_percent': 0.0,
+        }
+        
+        if not self.compressor:
+            # Just copy the file
+            shutil.copy2(input_path, output_path)
+            stats['compressed_size'] = stats['original_size']
+            return output_path, stats
+        
+        try:
+            self.compressor.compress_file(str(input_path), str(output_path))
+            
+            stats['compressed_size'] = output_path.stat().st_size
+            stats['ratio'] = stats['compressed_size'] / stats['original_size'] if stats['original_size'] > 0 else 1.0
+            stats['savings_bytes'] = stats['original_size'] - stats['compressed_size']
+            stats['savings_percent'] = (1 - stats['ratio']) * 100
+            
+            return output_path, stats
+            
+        except Exception as e:
+            print(f"  File compression failed: {e}")
+            shutil.copy2(input_path, output_path)
+            stats['compressed_size'] = stats['original_size']
+            return output_path, stats
+    
+    async def prepare_delta_bundle(self, 
+                                   files: List[Dict[str, Any]], 
+                                   output_dir: Path,
+                                   delta_date: str) -> Tuple[Path, Dict]:
+        """
+        Prepare a compressed delta bundle for commit.
+        
+        Args:
+            files: List of file info dicts with 'path', 'type', 'archetype'
+            output_dir: Directory to write bundle
+            delta_date: Date string for bundle name
+        
+        Returns:
+            Tuple of (bundle_path, bundle_stats)
+        """
+        import tarfile
+        
+        bundle_stats = {
+            'files_count': len(files),
+            'original_total': 0,
+            'compressed_total': 0,
+            'ratio': 1.0,
+            'per_file_stats': [],
+        }
+        
+        # Create staging directory
+        staging_dir = output_dir / f"staging_{delta_date}"
+        staging_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Process each file
+        manifest_files = []
+        for file_info in files:
+            file_path = Path(file_info['path'])
+            file_type = file_info.get('type', 'data')
+            archetype = file_info.get('archetype', '')
+            
+            if not file_path.exists():
+                print(f"  WARNING: File not found: {file_path}")
+                continue
+            
+            original_size = file_path.stat().st_size
+            bundle_stats['original_total'] += original_size
+            
+            # Compress the file
+            compressed_path, file_stats = self.compress_file_for_commit(
+                file_path, 
+                staging_dir / (file_path.name + '.zst')
+            )
+            
+            bundle_stats['compressed_total'] += file_stats['compressed_size']
+            bundle_stats['per_file_stats'].append({
+                'name': file_path.name,
+                'type': file_type,
+                **file_stats
+            })
+            
+            manifest_files.append({
+                'name': compressed_path.name,
+                'type': file_type,
+                'archetype': archetype,
+                'size': file_stats['compressed_size'],
+                'original_size': original_size,
+            })
+        
+        # Create manifest
+        manifest = {
+            'date': delta_date,
+            'version': '1.1.0',
+            'files': manifest_files,
+            'total_size_bytes': bundle_stats['compressed_total'],
+            'original_size_bytes': bundle_stats['original_total'],
+            'compression_ratio': bundle_stats['compressed_total'] / bundle_stats['original_total'] if bundle_stats['original_total'] > 0 else 1.0,
+        }
+        
+        manifest_path = staging_dir / 'manifest.json'
+        with open(manifest_path, 'w') as f:
+            json.dump(manifest, f, indent=2)
+        
+        # Create tar bundle
+        tar_path = output_dir / f"{delta_date}.tar"
+        with tarfile.open(tar_path, 'w') as tar:
+            for item in staging_dir.iterdir():
+                tar.add(item, arcname=item.name)
+        
+        # Compress the tar bundle
+        bundle_path, tar_stats = self.compress_file_for_commit(tar_path)
+        tar_path.unlink()  # Remove uncompressed tar
+        
+        # Calculate hash
+        with open(bundle_path, 'rb') as f:
+            bundle_hash = hashlib.sha256(f.read()).hexdigest()
+        
+        manifest['hash'] = f"sha256:{bundle_hash}"
+        
+        # Update manifest with hash
+        with open(manifest_path, 'w') as f:
+            json.dump(manifest, f, indent=2)
+        
+        # Cleanup staging
+        shutil.rmtree(staging_dir)
+        
+        bundle_stats['ratio'] = bundle_stats['compressed_total'] / bundle_stats['original_total'] if bundle_stats['original_total'] > 0 else 1.0
+        bundle_stats['bundle_path'] = str(bundle_path)
+        bundle_stats['bundle_hash'] = bundle_hash
+        
+        print(f"\n✓ Delta bundle prepared: {bundle_path.name}")
+        print(f"  Files: {bundle_stats['files_count']}")
+        print(f"  Original: {bundle_stats['original_total']:,} bytes")
+        print(f"  Compressed: {bundle_stats['compressed_total']:,} bytes")
+        print(f"  Ratio: {bundle_stats['ratio']:.1%}")
+        print(f"  Bandwidth saved: {bundle_stats['original_total'] - bundle_stats['compressed_total']:,} bytes")
+        
+        return bundle_path, bundle_stats
+    
+    def get_compression_stats(self) -> Dict:
+        """
+        Get compression statistics.
+        
+        Returns:
+            Compression stats dictionary
+        """
+        if self.compressor:
+            return self.compressor.stats.to_dict()
+        return {'enabled': False}
+    
     async def _mark_applied(self, delta_hash: str):
         """Mark a delta as applied"""
         applied_path = self.config.config_dir / "applied_deltas.json"
@@ -709,6 +956,7 @@ class DeltaSyncDaemon:
             'should_sync': self.should_sync(),
             'delta_repo': self.config.delta_repo_url,
             'cache_dir': str(self.config.delta_cache_dir),
+            'compression': self.get_compression_stats(),
         }
 
 
@@ -721,10 +969,12 @@ async def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='Delta Sync Daemon')
-    parser.add_argument('command', choices=['sync', 'status', 'set-interval', 'daemon'],
+    parser.add_argument('command', choices=['sync', 'status', 'set-interval', 'daemon', 'compress', 'compress-stats'],
                        help='Command to run')
     parser.add_argument('--interval', choices=['daily', 'weekly', 'monthly', 'manual'],
                        help='Update interval (for set-interval)')
+    parser.add_argument('--input', help='Input file path (for compress)')
+    parser.add_argument('--output', help='Output file path (for compress)')
     
     args = parser.parse_args()
     
@@ -746,6 +996,24 @@ async def main():
     
     elif args.command == 'daemon':
         await daemon.run_daemon()
+    
+    elif args.command == 'compress':
+        if args.input:
+            input_path = Path(args.input)
+            output_path = Path(args.output) if args.output else None
+            
+            if input_path.exists():
+                compressed_path, stats = daemon.compress_file_for_commit(input_path, output_path)
+                print(f"\nCompression complete:")
+                print(json.dumps(stats, indent=2))
+            else:
+                print(f"ERROR: Input file not found: {args.input}")
+        else:
+            print("ERROR: --input required for compress command")
+    
+    elif args.command == 'compress-stats':
+        stats = daemon.get_compression_stats()
+        print(json.dumps(stats, indent=2))
 
 
 if __name__ == '__main__':
