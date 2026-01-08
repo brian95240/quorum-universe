@@ -823,3 +823,34 @@ TOTAL_PHILOSOPHERS = len(QUORUM_PHILOSOPHERS)
 
 print(f"  → {TOTAL_PHILOSOPHERS} tribunal philosophers configured")
 print(f"  → Observer threshold: {QUORUM_OBSERVER['threshold']}")
+
+
+# =============================================================================
+# DELTA SYNC CONFIGURATION (Separate Repository Updates)
+# =============================================================================
+UPDATE_INTERVALS = {
+    'daily': {
+        'schedule': '0 3 * * *',      # 3 AM daily
+        'max_size_mb': 50,
+        'description': 'Bleeding-edge updates, ~5-50 MB daily',
+    },
+    'weekly': {
+        'schedule': '0 3 * * 0',      # 3 AM Sunday
+        'max_size_mb': 200,
+        'description': 'Balanced updates, ~100-200 MB weekly',
+    },
+    'monthly': {
+        'schedule': '0 3 1 * *',      # 3 AM 1st of month
+        'max_size_mb': 2000,
+        'description': 'Firmware-style updates, ~1-2 GB monthly',
+    },
+}
+
+DELTA_REPO_CONFIG = {
+    'main_repo': 'https://github.com/quorum-universe/quorum-universe',
+    'delta_repo': 'https://github.com/quorum-universe/quorum-deltas',
+    'default_interval': 'weekly',
+    'verify_signatures': False,  # Enable when Kyber keys are set up
+}
+
+print(f"  → Delta sync configured (default: {DELTA_REPO_CONFIG['default_interval']})")

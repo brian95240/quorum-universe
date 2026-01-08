@@ -112,6 +112,20 @@ $PYTHON_CMD quorum_core/apex_config.py
 echo -e "${CYAN}→ Running closed-loop tests...${NC}"
 $PYTHON_CMD quorum_core/closed_loop_test_suite.py
 
+# Configure delta sync
+echo -e "${CYAN}→ Configuring delta sync (default: weekly)...${NC}"
+mkdir -p ~/.quorum/config
+mkdir -p ~/.quorum/deltas
+cat > ~/.quorum/config/update_interval << DELTAEOF
+{
+  "interval": "weekly",
+  "daily_hour": 3,
+  "weekly_day": 0,
+  "monthly_day": 1
+}
+DELTAEOF
+echo -e "${GREEN}→ Delta sync configured (weekly updates at 3 AM Sunday)${NC}"
+
 # Install dashboard dependencies (if Node.js available)
 if command -v node &> /dev/null && [ -d "quorum-dashboard" ]; then
     echo -e "${CYAN}→ Installing dashboard dependencies...${NC}"
@@ -165,9 +179,16 @@ echo "  cd $INSTALL_DIR"
 echo "  source venv/bin/activate"
 echo "  python quorum_core/api_server.py"
 echo ""
-echo -e "${CYAN}To start the dashboard:${NC}"
+echo -e "${CYAN}To start the React dashboard:${NC}"
 echo "  cd $INSTALL_DIR/quorum-dashboard"
 echo "  pnpm dev"
+echo ""
+echo -e "${CYAN}To start the Admin dashboard (mobile-friendly):${NC}"
+echo "  python 'Source Code/admin_dashboard.py'"
+echo ""
+echo -e "${CYAN}To sync knowledge deltas:${NC}"
+echo "  python quorum_core/delta_sync.py sync"
+echo "  python quorum_core/delta_sync.py set-interval --interval daily"
 echo ""
 echo -e "${CYAN}API will be available at:${NC} http://localhost:8000"
 echo -e "${CYAN}Dashboard will be available at:${NC} http://localhost:3000"

@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Quorum Universe](https://img.shields.io/badge/Quorum-Universe-00ffd5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGZmZDUiIHN0cm9rZS13aWR0aD0iMiI+PHBvbHlnb24gcG9pbnRzPSIxMiAyIDIgNyAyIDE3IDEyIDIyIDIyIDE3IDIyIDcgMTIgMiIvPjwvc3ZnPg==)
-![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.1.0-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-GPL--3.0%20%2F%20Commercial-green?style=for-the-badge)
 ![Tests](https://img.shields.io/badge/tests-21%2F21%20passed-success?style=for-the-badge)
 
@@ -253,6 +253,75 @@ See [LICENSE](LICENSE) and [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md) for de
 | Business | $1M - $10M | $7,999/year |
 | Enterprise | $10M - $100M | $24,999/year |
 | Enterprise Plus | > $100M | Custom |
+
+---
+
+## Knowledge Updates (Delta Sync)
+
+Quorum Universe uses a **two-repository architecture** for efficient knowledge updates:
+
+- **Main Repository** (`quorum-universe`): Frozen base snapshot (~150-180 GB compressed)
+- **Delta Repository** (`quorum-deltas`): Live update stream (daily/weekly/monthly)
+
+### Update Intervals
+
+| Interval | Size | Schedule | Use Case |
+|----------|------|----------|----------|
+| Daily | 5-50 MB | 3 AM | Bleeding-edge research |
+| Weekly | 100-200 MB | Sunday 3 AM | Balanced (default) |
+| Monthly | 1-2 GB | 1st of month | Firmware-style |
+
+### Configure Update Interval
+
+```bash
+# Set to daily updates
+python quorum_core/delta_sync.py set-interval --interval daily
+
+# Set to weekly updates (default)
+python quorum_core/delta_sync.py set-interval --interval weekly
+
+# Set to monthly updates
+python quorum_core/delta_sync.py set-interval --interval monthly
+
+# Manual sync only
+python quorum_core/delta_sync.py set-interval --interval manual
+```
+
+### Manual Sync
+
+```bash
+# Trigger immediate sync
+python quorum_core/delta_sync.py sync
+
+# Check sync status
+python quorum_core/delta_sync.py status
+
+# Run as daemon (background service)
+python quorum_core/delta_sync.py daemon
+```
+
+---
+
+## Admin Dashboard
+
+A mobile-friendly Gradio interface for system administration:
+
+```bash
+# Start admin dashboard
+python "Source Code/admin_dashboard.py"
+
+# Access via browser
+# Local: http://localhost:7860
+# Tailscale: http://<tailscale-ip>:7860
+```
+
+### Features
+
+- **Knowledge Injection**: Paste URLs from your phone to add sources
+- **Voice Commands**: Speak to add sources (requires Whisper)
+- **Live Metrics**: Real-time system health visualization
+- **Compression Stats**: Monitor storage efficiency
+- **Archetype Management**: Configure and monitor archetypes
 
 ---
 
